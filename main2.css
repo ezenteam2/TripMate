@@ -54,11 +54,12 @@ div.navi{
     display:flex;
     flex-direction: row;
     border-top:solid 3px;
+    transition:1s;
     z-index: 1;
 }
 
 .displayNone{
-    display: none !important;
+   
 }
 
 div.navi>div{
@@ -71,6 +72,7 @@ div.text{
     padding-top:15px;
     height: 56px;
     cursor: pointer;
+    transition:1s;
     color:gray;
 }
 
@@ -84,7 +86,30 @@ ul.menu{
     border-left: solid 1px;
     border-bottom:solid 1px;
     border-right: solid 1px;
+    visibility: hidden;
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
 
 ul.menu>li{
     position: relative;
