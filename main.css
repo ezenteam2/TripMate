@@ -87,6 +87,7 @@ div.account{
     height:150px;
     border:solid;
     left:82%;
+    background-color: white;
 }
 
 div.account>div.accountHeader{
@@ -95,9 +96,17 @@ div.account>div.accountHeader{
     font-size:25px;
 }
 div.account>div.signIn{
-    margin-top:10%;
+    margin-top:5%;
     height:30%;
     text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgb(28, 168, 28);
+    border-radius: 20ch;
+    color:white;
+    margin-left:10%;
+    margin-right:10%;
+    padding-top:2%;
+    cursor: pointer;
 }
 div.account>div.accountBottom{
     margin-top:5%;
