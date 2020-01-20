@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Trip Mate | 관리자페이지</title>
+        <style>
+            body{
+                background-color: #FAFAFA;
+            }            
+            section{
+                display: flex;
+                flex-direction: row;
+            }
+            nav{
+                background-color: #F2F2F2;
+                margin-left: -10px;
+            }
+            .div1{
+                height : 950px;
+                border-left : 1px solid black;
+                margin-left: -1px;
+            }
+            .admin_category{
+                width : 300px;
+                font-size : 20px;
+                margin-top : -10px;
+                position : sticky;
+            }
+            #admin{
+                font-size: 25px;
+                font-weight : bold;
+                padding-top : 50px;
+                padding-bottom : 50px;
+                background-color: #A4A4A4;
+                color: black;
+            }
+            .admin_category>li{
+                padding : 30px;
+                border: 1px solid black;
+                border-top : 1px solid #A4A4A4;
+                margin-top: -1px;
+                padding-left : 58px;
+                border-bottom: 1px solid #A4A4A4; 
+            }
+            .admin_category>li:hover{
+                background-color : #BDBDBD;
+            }            
+            li{
+                list-style : none;
+            }
+            a{
+                color:black;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .board_sub{
+                margin-bottom : -1px;
+            }
+            .board_sub>li{
+                line-height: 30px;
+                font-size : 17px;
+            }
+            .div2{
+                border-left: 1px solid black;
+                margin-left: -1px;
+                margin-top:
+            }
+            
+            article{
+                margin-top:100px;
+                margin-left:150px;
+            }
+            #title {
+                font-size: 30px;
+                font-weight: bold;
+            }            
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    </head>
+    <body>
+        <section>     
+            <nav>    
+                <div class="admin_category">   
+                    <li id="admin">관리자페이지</li>
+                    <li onclick="location.href='#'">로그인</li>
+                    <li onclick="location.href='#'">웹 통계</li>
+                    <li class="board_main">
+                        고객센터 관리
+                        <ul class="board_sub" style="display:none;">
+                            <li><a href="#">공지사항 관리</a></li>
+                            <li><a href="#">FAQ 관리</a></li>
+                            <li><a href="#">Q&amp;A 게시판 관리</a></li>
+                        </ul>  
+                    </li>
+                    <li onclick="location.href='#'">여행 정보 관리</li>
+                    <li onclick="location.href='#'">일반 회원 관리</li>
+                    <li onclick="location.href='#'">가이드 회원 관리</li>
+                    <li onclick="location.href='#'">관리자 리스트</li>
+                </div>
+            </nav>
+                <div class = "div1">
+                </div>
+            
+                <div class = "div2">
+                <article>
+                    <!-- 화면설계서 구현 내용 -->
+                    
+                    <p id="title">제목</p>
+                    <hr>
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    <!-- 화면설계서 구현 내용 -->
+                    
+                    
+                </article>
+                </div>    
+        </section>                      
+        <script>
+            $(".board_main").click(function(){
+                if($(".board_sub").is(":visible")){
+                    $(".board_sub").css("display","none");
+                }
+                else{
+                    $(".board_sub").css("display","block");
+                }
+            })
+        </script>        
+    </body>
+</html>
