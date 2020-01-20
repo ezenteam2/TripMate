@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean');
 
-body{
-    background-color: #f6f9fc;
-}
 div.header{
-    border: solid;
     width:101%;
     height:80px;
     margin-top:30px;
@@ -23,14 +19,27 @@ div.logo{
     margin-left: -150px;
 }
 
+div.signIn{
+    position:absolute;
+    height:30%;
+    width:15%;
+    text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgb(28, 168, 28);
+    border-radius: 20ch;
+    color:white;
+    left:80%;
+    top:17%;
+    padding-top:4px;
+    padding-bottom: 10px;
+    font-weight:700;
+    cursor: pointer;
+}
+
 div.contents{
-    border:solid;
     position: relative;
     width:101%;
     margin-left: -8px;
-    height: 1000px;
-    border:solid;
-    border-color:blue;
 }
 
 video.video {
@@ -44,6 +53,8 @@ div.navi{
     height:70px;
     display:flex;
     flex-direction: row;
+    border-top:solid 3px;
+    z-index: 1;
 }
 
 .displayNone{
@@ -60,6 +71,7 @@ div.text{
     padding-top:15px;
     height: 56px;
     cursor: pointer;
+    color:gray;
 }
 
 ul.menu{
@@ -67,8 +79,11 @@ ul.menu{
     display:flex;
     flex-direction: column;
     list-style: none;
-    background-color: snow;
-    border:solid;
+    background-color: #f6f9fc;
+    border-radius: 0% 0% 10% 10%;
+    border-left: solid 1px;
+    border-bottom:solid 1px;
+    border-right: solid 1px;
 }
 
 ul.menu>li{
@@ -83,7 +98,25 @@ ul.menu>li{
 div.widget {
     position: absolute;
     width:100%;
-    height:700px;
-    background-color: rgba(0,0,0,0.7);
+    height:1035px;
+    background-color: rgba(0,0,0,0.3);
 }
 
+div.widget div.message{
+    position: relative;
+    top:40%;
+    left:35%;
+    width:480px;
+    font-size:40px;
+    color:rgba(245, 245, 220, 0.7);
+    
+}
+
+body{
+    background-color: #f6f9fc;
+}
+
+*{
+    font-family: 'Jua', sans-serif;
+    font-size:20px;
+}
