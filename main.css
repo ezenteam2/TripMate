@@ -13,10 +13,11 @@ div[class=header] {
 }
 
 div.logo{
-    height:150px;
+    width:300px;
+    height:80px;
     position: absolute;
     left:50%;
-    margin-left:-100px;
+    margin-left:-150px;
 }
 
 .displayNone{
