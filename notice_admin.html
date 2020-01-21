@@ -60,7 +60,7 @@
                 padding : 15px;                
                 padding-left: 80px;
            }
-            ul>div#div{
+            ul>div#div,ul>div:hover{
                 background-color: #A4A4A4;
             }
             li{
@@ -209,9 +209,9 @@
                     <li class="board_main">
                         고객센터 관리
                         <ul class="board_sub" style="display:none;">
-                            <div id="div"><li onclick="location.href='#'">▶ 공지사항 관리</li></div>
-                            <div><li onclick="location.href='FAQ_admin.html'">▶ FAQ 관리</li></div>
-                            <div><li onclick="location.href='Q&A_admin.html'">▶ Q&amp;A 게시판 관리</li></div>
+                            <div onclick="location.href='#'" id="div"><li>▶ 공지사항 관리</li></div>
+                            <div onclick="location.href='FAQ_admin.html'"><li>▶ FAQ 관리</li></div>
+                            <div onclick="location.href='Q&A_admin.html'"><li>▶ Q&amp;A 게시판 관리</li></div>
                         </ul>  
                     </li>
                     <li onclick="location.href='#'">여행 정보 관리</li>

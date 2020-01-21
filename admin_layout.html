@@ -47,7 +47,19 @@
                 background-color : #BDBDBD;
                 transition: 500ms;
                 cursor: pointer;                
-            }           
+            }
+            ul>div{
+                font-size:17px;
+                position: relative;
+                right : 30px;
+                margin-left: -80px;
+                margin-right: -60px;
+                padding : 15px;                
+                padding-left: 80px;
+            }
+            ul>div:hover{
+                background-color: #A4A4A4
+            }
             li{
                 list-style : none;
             }
@@ -99,9 +111,9 @@
                     <li class="board_main">
                         고객센터 관리
                         <ul class="board_sub" style="display:none;">
-                            <li onclick="location.href='notice_admin.html'" style="!important">▶ 공지사항 관리</li>
-                            <li onclick="location.href='FAQ_admin.html'" style="!important">▶ FAQ 관리</li>
-                            <li onclick="location.href='Q&A_admin.html'" style="!important">▶ Q&amp;A 게시판 관리</li>
+                            <div onclick="location.href='notice_admin.html'" style="!important"><li>▶ 공지사항 관리</li></div>
+                            <div onclick="location.href='FAQ_admin.html'" style="!important"><li>▶ FAQ 관리</li></div>
+                            <div onclick="location.href='Q&A_admin.html'" style="!important"><li>▶ Q&amp;A 게시판 관리</li></div>
                         </ul>  
                     </li>
                     <li onclick="location.href='#'">여행 정보 관리</li>
