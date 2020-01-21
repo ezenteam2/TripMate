@@ -127,30 +127,27 @@
             }
 
             table.userTable{
-                display: flex;
-                flex-direction: column;
-                height:100%;
+                width:100%;
+                
                 background-color: thistle;
             }
 
             tr{
-                flex-grow: 1;
                 width:100%;
                 background-color: teal;
-                display: flex;
-                flex-direction: row;
                 border-bottom: 2px solid;
             }
 
             tr>th{
-                flex-grow: 1;
                 text-align: center;
-                padding:10px;
+                padding-top:3px;
+                padding-bottom: 3px;
             }
             tr>td{
-                flex-grow:1;
                 text-align:center;
-                padding:10px;
+                padding-top:5px;
+                padding-bottom: 5px;
+                border:solid;
             }
             input[type=checkbox] {
                 transform: scale(1.7);
@@ -204,6 +201,46 @@
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>안녕하세요</td>
+                                    <td>홍길동</td>
+                                    <td>여행광</td>
+                                    <td class="수정"><input type="button" value="수정"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>2</td>
+                                    <td>반갑습니다</td>
+                                    <td>김길동</td>
+                                    <td>지나가는 사람</td>
+                                    <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>3</td>
+                                    <td>뭐하시나요</td>
+                                    <td>최길동</td>
+                                    <td>gildongchoi</td>
+                                    <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>4</td>
+                                    <td>웃긴사진</td>
+                                    <td>황길동</td>
+                                    <td>황사장</td>
+                                    <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>5</td>
+                                    <td>여행지 추천해여</td>
+                                    <td>유길동</td>
+                                    <td>yoo123</td>
+                                    <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -211,7 +248,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" /></td>
+                                    <td><input type="checkbox"></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -219,13 +256,62 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" /></td>
+                                    <td><input type="checkbox"></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                        
                             </table>
                         </div>
                     </div>
@@ -241,6 +327,20 @@
                     $(".board_sub").css("display","block");
                 }
             })
+
+            function editButtonMouseIn(event){
+                const editButton=event.target.firstChild;
+                editButton.style.visibility="visible";
+            }
+            function editButtonMouseOut(event){
+                const editButton=event.target.firstChild;
+                editButton.style.visibility="hidden";   
+            }
+            const editButtons = document.querySelectorAll('td[class=수정]');
+            editButtons.forEach((button)=>{
+                button.addEventListener("mouseenter", editButtonMouseIn);
+                button.addEventListener("mouseleave", editButtonMouseOut);
+            });
         </script>        
     </body>
 </html>
