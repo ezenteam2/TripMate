@@ -2,198 +2,102 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>잠이 오냐 지금?</title>
+  <title>Trip Mate - 여행 친구 만들기</title>
+  <link href="logo_title.png" rel="shortcut icon" type="image/x-icon">
 <style>
-        section{
-            display: flex;
-            position : relative;
-            left : 400px;
-            width : 1000px !important;
-            }
-        .nav{
-            border:1px solid #D8D8D8;
-            background-color:white;
-            width : 200px;
-            line-height : 100px;
-            text-align : center;
-            font-weight : bold;
-        }
-        #category_name{
-            background-color: #6E6E6E;
-            color : white;
-            line-height: 80px;
-            font-size : 22px;            
-        }
-        #selected_category_div{
-            background-color: #E6E6E6;
-        }
-        #selected_category{
-            color : #2E9AFE;
-            text-decoration: none;
-            font-size : 18px;            
-        }
-        #selected_category:hover{
-            text-decoration: underline;
-        }
-        .other_category_div{
-            background-color: #FAFAFA;
-        }
-        a{
-            text-decoration : none;
-            color : black;
-            font-size : 18px;             
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        main{
-            position : relative;
-            left : 100px;
-            top : 20px;
-            flex-basis: 500px;
-            background-color: #FAFAFA;
-            margin-top:-20px;
-            margin-left:-70px;
-            border:1px solid #D8D8D8;
-            }
-        form{
-            margin : 60px;
-            margin-bottom: 0;
-        }
-        h1{
-            display: inline;
-            position : relative;
-            bottom : 10px;
-        }
-        .h1_search{
-            display : flex;
-            flex-direction : row;
-            width : 750px
-        }
-        .h1_search hi #div2{
-            flex-grow: 1;
-        }
-        #div1{
-            flex-grow : 200;
-            top:10px;
-        }
-        #div2{
-            position : relative;
-            top : 20px;
-        }
-            input::placeholder{
-            padding : 10px;
-            font-size : 15px;
-        }    
-        #search{
-            width:300px; height:40px; font-size :17px; background-color : #F2F2F2; border : 2px solid #D8D8D8;
-        }
-        #search:focus{
-            background-color: white;
-        }
-        #search_button{
-             width:80px; height:40px; border : none; background-color: #2E9AFE; color : white; font-weight : bold; 
-        }
-        #search_button:hover{
-            text-decoration : underline;
-        }
-        .notice_table{
-            border-collapse:collapse;
-            width :750px;
-            margin-bottom: 25px;
-        }
-        
-        .notice_table th{
-            height: 40px;
-            border-top : 4px solid #424242;           
-            border-bottom : 1px solid gray;
-            background-color: #F2F2F2;
-            color : #424242;
-            font-weight: bold;
-        }
-        
-        .notice_table td{
-            height : 30px;
-            padding : 12px;
-            padding-right : 20px;
-            padding-left: 20px;
-            font-size : 15px;
-            font-weight : 500;
-            color:#2E2E2E;
-            border-bottom:1px solid #D8D8D8;
-            }
-        a{
-            color:#2E2E2E;
-            text-decoration: none;
-        }
-        td a:hover{
-           text-decoration: underline; 
-        }
-        .notice_table td:nth-child(n+2):nth-child(-n+3){
-            text-align: center;
-        }
-        .notice_td{
-            font-size : 15px;
-        }
-        tfoot td{
-            border-bottom : 4px solid #424242;
-            height : 10px 
-        }
-        .button {
-            position : relative;
-            top : -15px;       
-        }
-        input[type=button]{
-            background-color : white;
-            border : 1px solid gray;
-            width : 30px;
-            height : 30px;
-            font-weight : bold;
-            font-size: 15px;
-            color : #2E2E2E;
-        }
-        input[type=button]#_selected{
-            background-color:#2E9AFE;
-            border:1px solid #0080FF;
-            color:white;
-        }
-        input[type=button].direction{
-            position : relative;
-            left : 5px;
-        }
-        .button{
-        margin-left : 35%;
-        }
-        footer{
-            position : relative;
-            left : 350px;
-            margin-top:50px;
-            margin-bottom: 50px;
-            width:1000px !important;            
-        }
-        .footer{            
-            display: flex;
-            flex-direction: row;
-            width : 1170px;
-        }
-        img{
-            height : 100px;
-        }
-        .company_info .customer_service{
-            flex-grow : 1;
-            line-height: 30px;
-        }
-        #div3{
-            flex-grow: 50;
-        }
-        .customer_service{
-            line-height: 27px;
-        }
-        .customer_service th,td .cs_a{
-            font-size : 17px;
-        }
-        table{border-collapse:collapse;}
+    table{border-collapse:collapse;
+    	margin:20px;
+    	line-height:50px;}
+    table th{text-align:left;}
 	
+	select {
+    	width:100px; /* 원하는 너비설정 */
+    	padding:.8em .5em; /* 여백으로 높이 설정 */
+    	border:1px solid #999;
+	}	
+	.item{
+		width:300px;
+		height:800px;
+		margin-left:20px;
+		padding-top:50px;
+	}
+	.item2{
+		flex-grow:1;
+		height:800px;
+	}
+	.container{
+		display:flex;
+		flex-direction:row;
+	}
+    footer{
+        position : relative;
+        left : 350px;
+        margin-top:50px;
+        margin-bottom: 50px;
+        width:1000px !important;            
+    }
+    .footer{            
+        display: flex;
+        flex-direction: row;
+        width : 1170px;
+    }
+    img{
+        height : 100px;
+    }
+    .company_info .customer_service{
+        flex-grow : 1;
+        line-height: 30px;
+    }
+    #div3{
+        flex-grow: 50;
+    }
+    .customer_service{
+        line-height: 27px;
+    }
+    .customer_service th,td .cs_a{
+        font-size : 17px;
+    }
+	[type=text]{
+        width:250px;
+        height:40px;
+        font-size:17px;
+        background-color:#F2F2F2;
+        border:2px solid #D8D8D8;
+        margin:2px;
+    }
+    #search:focus{
+        background-color: white;
+    }
+    [type=button]{
+         width:100px;
+         height:40px;
+         border:none;
+         background-color:#2E9AFE;
+         color:white;
+         font-weight:bold; 
+    }
+    [type=submit]{
+         width:100px;
+         height:40px;
+         border:none;
+         background-color:#2E9AFE;
+         color:white;
+         font-weight:bold; 
+    }
+    [type=password]{
+        width:250px;
+        height:40px;
+        font-size:17px;
+        background-color:#F2F2F2;
+        border:2px solid #D8D8D8;
+    }
+    [type=select]{
+         width:80px;
+         height:40px;
+         border:none;
+         background-color:#2E9AFE;
+         color:white;font-weight:bold; 
+    }
 </style>
 <script type = "text/javascript">
 	
@@ -204,8 +108,22 @@
 
 	<form>
 	
-	<table class="notice_table">
-	<tr><th>프로필 사진 등록</th>	<td><input type = "image" name = "inputImage" value = "등록하려면 클릭하세요"></td>					</tr>
+	<header style="height:70px;text-align:center; vertical-align:center;">
+	<h1>회 원 가 입</h1>	
+	</header>
+	
+	<div class="container">
+	<div class="item">
+	<p style="text-align:center;">
+	<img src="logo.png" style="width:250;border-radius:70%;"><br>
+	프로필 사진 등록<br>
+	<input type = "image" name = "inputImage" value = "등록하려면 클릭하세요">
+	</p>
+	</div>
+	
+	<div class="item2">
+	
+	<table cellpadding="3">
 	<tr><th>아이디</th>			<td><input type = "text" name = "id01" placeholder = "ID를 입력하세요">
 								<input type = "button" name = "exstingId" value = "ID 중복확인"></td>								</tr>
 	<tr><th>비밀번호</th>			<td><input type = "password" name = "password01" placeholder = "비밀번호를 입력하세요" >		</td>	</tr>
@@ -245,11 +163,13 @@
 										<option value = "hanmail.net">hanmail.net</option>
 								</select>
 								</td>																			</tr>
-	<tr><th>주소</th>			<td><input type = "text" name = "location01">
+	<tr><th style="vertical-align:top;">주소</th>
+							<td><input type = "text" name = "location01">
 								<input type = "button" name = "locationSearch" value = "주소검색"><br>
 								<input type = "text" name = "location01">
 								</td>																			</tr>
-	<tr><th>휴대전화</th>		<td><input type = "radio" name = "company" value = "SKT" checked/>SKT	
+	<tr><th style="vertical-align:top;">휴대전화</th>
+							<td><input type = "radio" name = "company" value = "SKT" checked/>SKT	
 							<input type = "radio" name = "company" value = "KT"/>KT
 							<input type = "radio" name = "company" value = "LGT"/>LGT
 							<input type = "radio" name = "company" value = "알뜰폴"/>알뜰폰<br>
@@ -263,8 +183,7 @@
 								<input type = "text" name = "phoneNum02">
 								<input type = "button" name = "phoneNumCerti" value = "인증번호요청"><br>
 								인증번호 <input type = "text" name = "phoneNumCertiCode">
-								<input type = "button" name = "phoneNumCertiCodeButton" value = "확인">
-								</td>
+								<input type = "button" name = "phoneNumCertiCodeButton" value = "확인">								</td>
 	<tr><th>활동지역</th>		<td><select>
 								<option value = "Seoul">서울</option>
 								<option value = "Daejeon">대전</option>
@@ -299,16 +218,17 @@
 								<option value = "lowcost01">짠내투어</option>
 							</select>
 							</td>																				</tr>
-	<tr><th colspan = "2"><input type = "submit" value = "회원 가입 꽝"/></th>										</tr>						
+	<tr><th colspan = "2" style="text-align:center;"><input style="margin:30px;width:200px;" type = "submit" value = "회원 가입 꽝"/></th>		</tr>						
 	</table>
-	
+	</div>
+	</div>
 	
 	</form>
 	
 	    <footer>
         <div class = "footer">
         <table class="company_info">
-            <tr><td rowspan="3"><img src="../image/logo.PNG"></td><td>상호</td><td>|</td><td>Trip Mate</td></tr>
+            <tr><td rowspan="3"><img src="logo.png" style="margin-right:20px;"></td><td>상호</td><td>|</td><td>Trip Mate</td></tr>
             <tr><td>팀원</td><td>|</td><td>김현태, 김용승, 권기범, 이형준, 유서희</td></tr>
             <tr><td>소속</td><td>|</td><td>이젠 컴퓨터 아카데미 종로 캠퍼스 / 자바 웹&amp;앱 개발자 양성 과정 / 2조</td></tr>
         </table>

@@ -5,6 +5,39 @@
 <title>잠이 오냐 지금?</title>
 <style>
 	table{border-collapse:collapse;}
+	[type=text]{
+        width:250px;
+        height:40px;
+        font-size:17px;
+        background-color:#F2F2F2;
+        border:2px solid #D8D8D8;
+        margin:2px;
+	}
+    [type=button]{
+         width:100px;
+         height:40px;
+         border:none;
+         background-color:#2E9AFE;
+         color:white;
+         font-weight:bold; 
+    }
+    [type=submit]{
+         width:100px;
+         height:40px;
+         border:none;
+         background-color:#2E9AFE;
+         color:white;
+         font-weight:bold; 
+    }
+    [type=password]{
+        width:250px;
+        height:40px;
+        font-size:17px;
+        background-color:#F2F2F2;
+        border:2px solid #D8D8D8;
+    }
+    a {text-decoration:none;}
+    a:hover{background-color:#F2F2F2;}	
 </style>
 <script type = "text/javascript">
 
@@ -12,16 +45,14 @@
 </head>
 
 <body>
-
 <p style="text-align:center">
-<img src="logo.PNG" width="150" style="text-align:center; margin:30px"><br><br>
-<input type="text" name="id01" placeholder="아이디" style="width:300px; height:40px;"><br><br>
-<input type="text" name="pw01" placeholder="비밀번호" style="width:300px; height:40px;"><br><br>
+<img src="logo.png" width="150" style="margin:30px"><br>
+<input type="text" name="id01" placeholder="아이디" style="width:300px; height:40px; margin:10px;"><br>
+<input type="password" name="pw01" placeholder="비밀번호" style="width:300px; height:40px; margin:10px;"><br><br>
 <input type="submit" name="login01" value="로그인" style="width:100px; height:40px;"><br><br>
 <a href="../a01_basic/index.jsp">아이디 찾기</a>       <a href="../a02_html/a01_start.html">비밀번호 찾기</a><br><br>
-<input type="button" name="naverlogin" value="NAVER LOGIN" style="width:300px; height:50px;">
-<input type="button" name="googlelogin" value="GOOGLE LOGIN" style="width:300px; height:50px;">
+<input type="button" name="naverlogin" value="NAVER LOGIN" style="width:250px; height:40px; margin:10px;">
+<input type="button" name="googlelogin" value="GOOGLE LOGIN" style="width:250px; height:40px; margin:10px;">
 
-</p>
 </body>
 </html>
