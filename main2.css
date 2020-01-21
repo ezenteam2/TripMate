@@ -134,7 +134,7 @@ div.widget>div.message{
     
 }
 
-div.widget>div.curtain{
+div.widget>div.footer{
     flex-grow:2;
     border-top:solid 1px;
     background-color:#f6f9fc;
