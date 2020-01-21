@@ -25,29 +25,53 @@
                 font-size : 20px;
                 margin-top : -10px;
                 position : sticky;
+                font-weight: bold;                
             }
             #admin{
-                font-size: 25px;
+                font-size: 30px;
                 font-weight : bold;
                 padding-top : 50px;
                 padding-bottom : 50px;
-                background-color: #A4A4A4;
-                color: black;
+                background-color: black;
+                color: white;
+                cursor: none;
             }
             .admin_category>li{
                 padding : 30px;
                 border: 1px solid black;
                 border-top : 1px solid #A4A4A4;
                 margin-top: -1px;
-                padding-left : 58px;
+                padding-left : 60px;
                 border-bottom: 1px solid #A4A4A4; 
             }
             .admin_category>li:hover{
                 background-color : #BDBDBD;
-            }            
+                transition: 500ms;
+                cursor: pointer;                
+            }
+            ul>div{
+                font-size:17px;
+                position: relative;
+                right : 30px;
+                margin-left: -80px;
+                margin-right: -60px;
+                padding : 15px;                
+                padding-left: 80px;
+                transition: 800px;
+            }
+            ul>div:hover{
+                background-color: #A4A4A4
+            }
             li{
                 list-style : none;
             }
+            li>p{
+                position: relative;
+                left : -35px;
+                top:2.2px;
+                display: inline;
+                font-size:30px;
+            }            
             a{
                 color:black;
                 text-decoration: none;
@@ -89,9 +113,9 @@
                     <li class="board_main">
                         고객센터 관리
                         <ul class="board_sub" style="display:none;">
-                            <li><a href="notice_admin.html" style="!important">공지사항 관리</a></li>
-                            <li><a href="FAQ_admin.html" style="!important">FAQ 관리</a></li>
-                            <li><a href="Q&A_admin.html" style="!important">Q&amp;A 게시판 관리</a></li>
+                            <div onclick="location.href='notice_admin.html'" style="!important"><li>▶ 공지사항 관리</li></div>
+                            <div onclick="location.href='FAQ_admin.html'" style="!important"><li>▶ FAQ 관리</li></div>
+                            <div onclick="location.href='Q&A_admin.html'" style="!important"><li>▶ Q&amp;A 게시판 관리</li></div>
                         </ul>  
                     </li>
                     <li onclick="location.href='#'">여행 정보 관리</li>
