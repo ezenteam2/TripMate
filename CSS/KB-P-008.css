@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#f6f9fc;
+}
+header{
+    width:100%;
+    height:100px;
+    background-color:navajowhite;
+    position: fixed;
+    
+}
+
+main{
+    padding-left:20%;
+    padding-right:20%;
+    text-align:center;
+}
+
+#Title{
+    margin-top:17%;
+}
+
+table{
+    width:100%;
+    border-top:1px dotted black;
+}
+
+th{
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    border-bottom:2px double black;
+    font-size:12pt;
+}
+td{
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    border-bottom: 1px dotted black;
+}
+
+button{
+    width:60px;
+    height:30px;
+}
+
+#popup{
+    width:400px;
+    height:250px;
+    border:solid;
+    background-color:#f6f9fc;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+#input{
+    margin-top:3%;
+}
+
+.inputTitle{
+    width:30%;
+    font-weight: 500;
+    
+}
+
+[type=text]{
+    width:50%;
+    height:20px;
+    flex-grow: 1;
+    position: relative;
+    margin-left:5%;
+}
+
+
+
+div.content2{
+    flex-grow:1;
+    position: relative;
+    margin-left:-25.5%;
+}
+
+.ContentDiv{
+    position: relative;
+    width:100%;
+    height:80px;
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+}
+
+#inputContent{
+    width:50%;
+    height:80px;
+    
+    border:1.5px solid black;
+}
+.ContentTitle{
+    padding-left:2%;
+    
+    width:30%;
+    height:100%;
+    padding-top:8%
+    
+   
+}
+
+#BtnDiv{
+    margin-top:1%;
+}
+
+#PageNum{
+    font-size: 13pt;
+}
