@@ -25,29 +25,54 @@
                 font-size : 20px;
                 margin-top : -10px;
                 position : sticky;
+                font-weight: bold;                
             }
             #admin{
-                font-size: 25px;
+                font-size: 30px;
                 font-weight : bold;
                 padding-top : 50px;
                 padding-bottom : 50px;
-                background-color: #A4A4A4;
-                color: black;
+                background-color: black;
+                color: white;
+                cursor: initial;
+                user-select: none;
             }
             .admin_category>li{
                 padding : 30px;
                 border: 1px solid black;
                 border-top : 1px solid #A4A4A4;
                 margin-top: -1px;
-                padding-left : 58px;
+                padding-left : 60px;
                 border-bottom: 1px solid #A4A4A4; 
             }
             .admin_category>li:hover{
                 background-color : #BDBDBD;
-            }            
+                transition: 500ms;
+                cursor: pointer;                
+            }
+            ul>div{
+                font-size:17px;
+                position: relative;
+                right : 30px;
+                margin-left: -80px;
+                margin-right: -60px;
+                padding : 15px;                
+                padding-left: 80px;
+                transition: 800px;
+            }
+            ul>div:hover{
+                background-color: #A4A4A4
+            }
             li{
                 list-style : none;
             }
+            li>p{
+                position: relative;
+                left : -35px;
+                top:2.2px;
+                display: inline;
+                font-size:30px;
+            }            
             a{
                 color:black;
                 text-decoration: none;
@@ -74,7 +99,7 @@
             #title {
                 font-size: 30px;
                 font-weight: bold;
-            }
+            }          
             .content{
                 border:solid 1px;
                 width:1300px;
