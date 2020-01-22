@@ -33,7 +33,7 @@
                 padding-bottom : 50px;
                 background-color: black;
                 color: white;
-                cursor: none;
+                cursor: default;
             }
             .admin_category>li{
                 padding : 30px;
@@ -41,13 +41,27 @@
                 border-top : 1px solid #A4A4A4;
                 margin-top: -1px;
                 padding-left : 60px;
-                border-bottom: 1px solid #A4A4A4;
+                border-bottom: 1px solid #A4A4A4; 
             }
-            .admin_category>li:hover{
+            .board_sub div{
+                position: relative;
+                left : 30px;
+                width: 214px;
+            }
+            .board_sub{
+                margin-bottom : -1px;
+                background-color: #BDBDBD;
+                padding-bottom: 6px;
+                border-right: 1px solid black;
+                margin-top: -25px;
+                padding-top: 8px;
+                padding-bottom: 20px;
+            }            
+            .board_suby>li:hover{
                 background-color : #BDBDBD;
-                transition: 800ms;
-                cursor: pointer;
-            }           
+                transition: 500ms;
+                cursor: pointer;                
+            }
             .board_main{
                 background-color : #BDBDBD;
             }
@@ -68,9 +82,6 @@
             }
             a{
                 color:black;
-                text-decoration: none;
-            }
-            a:hover{
                 text-decoration: underline;
             }
             #checked{
@@ -207,14 +218,13 @@
                     <li id="admin">관리자페이지</li>
                     <li onclick="location.href='#'">로그인</li>
                     <li onclick="location.href='#'">웹 통계</li>
-                    <li class="board_main">
-                        고객센터 관리
-                        <ul class="board_sub" style="display:block;">
-                            <div onclick="location.href='#'" id="div"><li>▶ 공지사항 관리</li></div>
-                            <div onclick="location.href='FAQ_admin.html'"><li>▶ FAQ 관리</li></div>
-                            <div onclick="location.href='Q&A_admin.html'"><li>▶ Q&amp;A 게시판 관리</li></div>
+                    <li class="board_main" onclick="backgroundColor:#BDBDBD">
+                        고객센터 관리</li>
+                        <ul class="board_sub" style="display:none;">
+                            <div onclick="location.href='notice_admin.html'"><li>▶ 공지사항 관리</li></div>
+                            <div onclick="location.href='FAQ_admin.html'" style=><li>▶ FAQ 관리</li></div>
+                            <div onclick="location.href='Q&A_admin.html'" style=><li>▶ Q&amp;A 게시판 관리</li></div>
                         </ul>  
-                    </li>
                     <li onclick="location.href='#'">여행 정보 관리</li>
                     <li onclick="location.href='#'">일반 회원 관리</li>
                     <li onclick="location.href='#'">가이드 회원 관리</li>
@@ -271,7 +281,15 @@
                 </div>    
         </section>                      
         <script>
-             //$(".board_sub").css("display","block");
+            $(".board_main").click(function(){
+                if($(".board_sub").is(":visible")){
+                    $(".board_sub").css("display","none");
+
+                }
+                else{
+                    $(".board_sub:not(.board_main)").css("display","block");
+                }
+            })           
         </script>        
     </body>
 </html>
