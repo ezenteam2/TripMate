@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Trip Mate | 관리자페이지</title>
+        <style>
+            body{
+                background-color: #FAFAFA;
+            }
+            section{
+                display: flex;
+                flex-direction: row;
+            }
+            nav{
+                background-color: #F2F2F2;
+                margin-left: -10px;
+            }
+            .div1{
+                height : 950px;
+                border-left : 1px solid black;
+                margin-left: -1px;
+            }
+            .admin_category{
+                width : 300px;
+                font-size : 20px;
+                margin-top : -10px;
+                position : sticky;
+                font-weight: bold;                
+            }
+            #admin{
+                font-size: 30px;
+                font-weight : bold;
+                padding-top : 50px;
+                padding-bottom : 50px;
+                background-color: black;
+                color: white;
+                cursor: default;
+            }
+            .admin_category>li{
+                padding : 30px;
+                border: 1px solid black;
+                border-top : 1px solid #A4A4A4;
+                margin-top: -1px;
+                padding-left : 60px;
+                border-bottom: 1px solid #A4A4A4; 
+            }
+            .board_sub div{
+                position: relative;
+                left : 30px;
+                width: 214px;
+            }
+            .board_sub{
+                margin-bottom : -1px;
+                background-color: #BDBDBD;
+                padding-bottom: 6px;
+                border-right: 1px solid black;
+                margin-top: -25px;
+                padding-top: 8px;
+                padding-bottom: 20px;
+            }            
+            .board_suby>li:hover{
+                background-color : #BDBDBD;
+                transition: 500ms;
+                cursor: pointer;                
+            }
+            .board_main{
+                background-color : #BDBDBD;
+            }
+            ul>div{
+                font-size:17px;
+                position: relative;
+                right : 30px;
+                margin-left: -80px;
+                margin-right: -60px;
+                padding : 15px;                
+                padding-left: 80px;
+           }
+            ul>div#div,ul>div:hover{
+                background-color: #A4A4A4;
+            }          
+            li{
+                list-style : none;
+            }
+            li>p{
+                position: relative;
+                left : -35px;
+                top:2.2px;
+                display: inline;
+                font-size:30px;
+            }            
+            a{
+                color:black;
+                text-decoration: underline;
+            }
+            #checked{
+                text-decoration: underline;
+            }
+            .board_sub{
+                margin-bottom : -1px;
+            }
+            .board_sub>li{
+                line-height: 30px;
+                font-size : 17px;
+            }
+            .div2{
+                border-left: 1px solid black;
+                margin-left: -1px;
+                margin-top:
+            }
+            
+            article{
+                margin-top:60px;
+                margin-left:150px;
+            }
+            #title {
+                font-size: 30px;
+                font-weight: bold;
+                display: inline;
+            }
+            #writing{
+                position: relative;
+                left : 875px;
+            }             
+            [src="excelLogo.png"]{
+                height : 30px;
+                position : relative;
+                left : 1160px;
+                bottom : 5px;
+                margin-top: 5px;
+            }
+            [src="excelLogo.png"]:hover{
+                cursor: pointer;
+            }            
+            .adminButton[type="button"]{
+                background-color: white;
+                width : 70px;
+                height : 30px;
+                margin-bottom: 5px;
+                border : 1px solid black;
+                font-size: 15px;
+            }
+            .adminButton:hover{
+                cursor:  Pointer;
+            }
+            select{
+                position : relative;
+                left : 745px;
+                height:30px;
+                width : 120px;
+                border: 1px solid black;
+            }
+            table{
+                border: 1px solid black;
+                border-collapse: collapse;
+                background-color: white;
+            }
+            .th{
+                font-weight : bold !important;
+                font-size : 17px !important;
+                background-color: #E6E6E6;
+            }
+
+            td{                
+                font-size : 15px; 
+                height: 50px;
+                border : 1px solid black;
+            }
+            td:nth-child(1){
+                width : 50px;
+                text-align: center;
+            }
+            td:nth-child(2){
+                width : 180px;
+                font-size : 15px;
+                text-align: center
+            }
+            td:nth-child(3){
+                width : 700px;
+                padding-left: 15px;
+            }
+            td:nth-child(4){
+                width : 80px;
+                text-align: center;
+            }
+            td:nth-child(5){
+                width : 80px;
+                text-align: center;
+            }
+            td:nth-child(6){
+                width : 70px;
+                text-align: center;
+            }
+            [type="checkbox"]{
+                height : 20px;
+                width: 20px;
+                border : 1px solid gray;
+                background-color: white;
+            }
+            .notcomplete>a{
+                color : red;
+                font-weight: bold;
+            }
+            .complete>a{
+                font-weight: bold;
+            }
+            .button {
+                position : relative;
+                top : 15px;
+                margin-left : 42%;
+            }
+            .button [type=button]{
+                background-color : white;
+                border : 1px solid gray;
+                width : 30px;
+                height : 30px;
+                font-weight : bold;
+                font-size: 15px;
+                color : #2E2E2E;
+            }
+            .button [type=button]#_selected{
+                background-color:#2E9AFE;
+                border:1px solid #0080FF;
+                color:white;
+            }
+            .button [type=button].direction{
+                position : relative;
+                left : 5px;
+            }            
+        </style>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    </head>
+    <body>
+        <section>     
+            <nav>    
+                <div class="admin_category">   
+                    <li id="admin">관리자페이지</li>
+                    <li onclick="location.href='#'">로그인</li>
+                    <li onclick="location.href='#'">웹 통계</li>
+                    <li class="board_main" onclick="backgroundColor:#BDBDBD">
+                        고객센터 관리</li>
+                        <ul class="board_sub" style="display:none;">
+                            <div onclick="location.href='notice_admin.html'"><li>▶ 공지사항 관리</li></div>
+                            <div onclick="location.href='FAQ_admin.html'" style=><li>▶ FAQ 관리</li></div>
+                            <div onclick="location.href='Q&A_admin.html'" style=><li>▶ Q&amp;A 게시판 관리</li></div>
+                        </ul>  
+                    <li onclick="location.href='#'">여행 정보 관리</li>
+                    <li onclick="location.href='#'">일반 회원 관리</li>
+                    <li onclick="location.href='#'">가이드 회원 관리</li>
+                    <li onclick="location.href='#'">관리자 리스트</li>
+                </div>
+            </nav>
+                <div class = "div1">
+                </div>
+            
+                <div class = "div2">
+                <article>
+                    <p id="title">Q&amp;A 게시판 관리</p>
+                    <input class="adminButton" id="writing" type="button" value="글쓰기">                     
+                    <hr>
+                    <img src="excelLogo.png" title="엑셀로 다운받기"><br>
+                    <input class="adminButton" type="button" value="삭제">
+                    <select name="answer">
+                        <option value="recent">답변없는것만</option>
+                        <option value="old">답변있는것만</option>
+                    </select>
+                    <select name="date">
+                        <option value="popular">최근날짜순</option>
+                        <option value="notpopular">오래된날짜순</option>
+                    </select>
+                    <select name="howmany">
+                        <option value="10">10개씩보기</option>
+                        <option value="30">30개씩보기</option>
+                        <option value="50">50개씩보기</option>
+                        <option value="100">100개씩보기</option>
+                    </select>
+                    <table>
+                        <tr><td class="th"><input type=checkbox></td><td class="th">일시</td><td class="th">제목</td><td class="th">답변달기</td><td class="th">작성자</td><td class="th">조회수</td></tr>                       
+                        <tr><td><input type=checkbox></td><td>2020-01-13 14:23:45</td><td><a href="#">결제가 안됩니다ㅠ</a></td><td class="notcomplete"><a href="#">답변달기</a></td><td><a href="#">SH</a></td><td>15</td></tr>
+                        <tr><td><input type=checkbox></td><td>2020-01-12 14:24:30</td><td><a href="#">점검은 언제 끝나나요?</a></td><td class="complete"><a href="#">답변완료</a></td><td><a href="#">클레어</a></td><td>30</td></tr>   
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                        <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
+                    </table>
+                    <div class="button">
+                        <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
+                        <input type="button" name="page2" value="2">
+                        <input type="button" name="page3" value="3">
+                        <input class ="direction" type="button" name="next" value=">">
+                        <input class ="direction" type="button" name="last_page" value=">>">
+                    </div>                    
+                </article>
+                </div>    
+        </section>                      
+        <script>
+            $(".board_main").click(function(){
+                if($(".board_sub").is(":visible")){
+                    $(".board_sub").css("display","none");
+
+                }
+                else{
+                    $(".board_sub:not(.board_main)").css("display","block");
+                }
+            })
+        </script>        
+    </body>
+</html>

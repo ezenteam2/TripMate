@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/KB-P-008.css">
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                 
+                $("#submit").click(function(){
+                    $("#popup").hide(); 
+                });
+                $(".cancel").click(function(event){
+                    const name = event.target.parentNode.parentNode.children[1].innerText;
+                    $("#popup").show();
+                    $("#name").val(name);
+                });
+            });
+            
+
+        </script>
+        
+    </head>
+    <body>
+            <div class="header">
+                    <div class="logo">
+                        <img src="../gr2_lhj/logo_r2.png" alt="로고" width="300" height="80">
+                    </div>
+                    <div class="signIn">로그인</div>
+                </div>
+                <div class="contents">
+                    <div class="navi">
+                        <div></div>
+                        <div class="listMenu">
+                            <div class="text">여행정보</div>
+                            <ul class="menu displayNone">
+                                <li>메뉴1</li>
+                                <li>메뉴2</li>
+                                <li>메뉴3</li>
+                                <li>메뉴4</li>
+                            </ul>
+                        </div>
+                        <div class="listMenu">
+                            <div class="text">메이트찾기</div>
+                            <ul class="menu displayNone">
+                                <li>메뉴1</li>
+                                <li>메뉴2</li>
+                                <li>메뉴3</li>
+                                <li>메뉴4</li>
+                            </ul>
+                        </div>
+                        <div class="listMenu">
+                            <div class="text">가이드찾기</div>
+                            <ul class="menu displayNone">
+                                <li>메뉴1</li>
+                                <li>메뉴2</li>
+                                <li>메뉴3</li>
+                                <li>메뉴4</li>
+                            </ul>
+                        </div>
+                        <div class="listMenu">
+                            <div class="text">문의사항</div>
+                            <ul class="menu displayNone">
+                                <li>메뉴1</li>
+                                <li>메뉴2</li>
+                                <li>메뉴3</li>
+                                <li>메뉴4</li>
+                            </ul>
+                        </div>
+                        <div></div>
+                    </div><br>
+                    <script src="../gr2_lhj/main2.js"></script>
+        <main>
+            <h1 id="Title"> 가이드 상품 관리 </h1>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>상품 목록 </th>
+                            <th>신청자명 </th>
+                            <th>휴대전화번호</th>
+                            <th>수락</th>
+                            <th>취소</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 설민석과 함께 하는...</td>
+                            <td> 홍길동 </td>
+                            <td> 010-1234-5678 </td>
+                            <td> <button > 수락 </button></td>
+                            <td><button class="cancel"> 취소 </button></td>
+                        </tr>
+                        <tr>
+                            <td> 펭수와 함께 하는...</td>
+                            <td> 김길동 </td>
+                            <td> 010-5678-1234 </td>
+                            <td> <button> 수락 </button></td>
+                            <td><button class="cancel" > 취소 </button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td> 유산슬과 함께 하는...</td>
+                            <td> 신길동 </td>
+                            <td> 010-9876-5432 </td>
+                            <td> <button> 수락 </button></td>
+                            <td><button class="cancel"> 취소 </button></td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <div>
+                    <span id="pageNum"> << &nbsp;< 1&nbsp; 2 &nbsp;3 .... &nbsp;10 >&nbsp; >></span>
+                </div>
+                 
+                 
+            
+            <div id="popup">
+                <form method="post">
+                    <div id="popupTitle">
+                        <h3> 상품 취소 </h3>
+                    </div>
+                    <div id="inputName">
+                        <span class="inputTitle">이름 : </span>
+                        <span><input type="text" id="name"></span>
+                    </div>
+                    <div class="ContentDiv">
+                        <div class="ContentTitle"> 사유 : </div>
+                        <div class="input content2"><textarea id="inputContent"></textarea></div>
+                    </div>
+                    <div id="BtnDiv">
+                        <button id="submit">전송</button>
+                    </div>
+                </form>
+           
+
+        </main>
+    </body>
+</html>
