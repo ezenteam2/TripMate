@@ -2,58 +2,80 @@ body{
     padding:0;
     margin:0;
 }
+
 #head{
     width:100%;
     height:100px;
     background-color:navajowhite;
     border-bottom: 1px solid black;
     position: fixed;
+   
 }
+
 #Main{
     padding-left: 29%;
     padding-right: 29%;
 }
+
 #Title{
     font-size:20pt;
     text-align:center;
     margin-top:17%;
 }
+
 .inputDIV{
     width:100%;
     height:40px;
-    padding:15px;    
+    padding:15px;
+    
 }
+
 .title{
     width:30%;
     height:100%;
-    font-weight:600;
 }
+
 .input{
     width:70%;
     height:100%;
 }
+
 .inputs{
-    width:70%;
+    width:60%;
     height:75%;
     margin-left:8%;
     border:1.5px solid black;
 }
+
 .ContentTitle{
-    width:30%;
+    width:10%;
     height:100%;
-   	font-weight:600;
-   	padding: 100px 0px;
+    padding-top:50px;
+   
+   
 }
+
 [type=file]{margin-left:6%;}
+
+div.content2{
+    flex-grow:1;
+    position: relative;
+    margin-left:-4%;
+}
+
 .ContentDiv{
+    position: relative;
     width:100%;
-    height:170px;
-    padding:15px;  
-    }
-#inputContent{
-    width:70%;
     height:150px;
-    margin-left:8%;
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+}
+
+#inputContent{
+    width:63%;
+    height:125px;
+    margin-left:10%;
     border:1.5px solid black;
 }
 .btnDiv{
@@ -62,21 +84,30 @@ body{
     text-align:center;
     padding:15px;
 }
+
 button{
     width:200px;
     height:40px;
 }
-.inputs:hover{background-color:#B5B2FF;}
-#inputContent:hover{ background-color:#B5B2FF;}
-.inputs.active{ border:1px solid orange;}
-#inputContent:active{border:1px solid orange;}
-button:hover{background-color:#B5B2FF;}
-.navTitle{
-	font-size:28pt;
-	padding:25px;
+
+.inputs:hover{
+    background-color:#ECEBFF;
 }
+
+#inputContent:hover{
+    background-color:#ECEBFF;
+}
+
+
+button:hover{background-color:#ECEBFF;}
 nav{
-	text-align:center;
-	margin-top:20px;	
+    text-align:center;
+    margin-top:2.5%;
 }
-b{text-align:center;}
+
+.navTitle{
+    font-size:28px;
+    padding:25px;
+
+}
+
