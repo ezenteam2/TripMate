@@ -85,26 +85,27 @@ ul.menu{
     visibility: hidden;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn { transition에 비해 복잡한 애니메이션 가능..
     0% {
       opacity: 0;
+      visibility:hidden;
     }
     100% {
       visibility: visible;
-      opacity: 1;
+      opacity:1;
     }
   }
 
   @keyframes fadeOut {
     0% {
-      opacity: 1;
       visibility: visible;
+      opacity:1;
     }
     100% {
       visibility: hidden;
-      opacity: 0;
+      opacity:0;
     }
-  }
+  } */
 
 
 ul.menu>li{
