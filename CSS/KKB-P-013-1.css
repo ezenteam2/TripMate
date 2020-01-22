@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#f6f9fc;
+}
+
+header{
+    width:100%;
+    height:100px;
+    background-color: navajowhite;
+    position: fixed;
+    z-index: 1;
+
+}
+
+main{
+    
+    padding-left: 22%;
+    padding-right: 22%;
+    margin-top:7%;
+}
+#title{
+    text-align: center;
+}
+#category{
+    color:blue;
+    font-family: 'Jua', sans-serif;
+}
+
+#Title{
+    font-weight:700;
+    font-size: 24pt;
+    font-family: 'Jua', sans-serif;
+}
+
+#Date{
+    margin-top:1%;
+}
+
+#ImageDiv{
+    width:100%;
+    height:350px;
+    margin-top:3%;
+    text-align: center;
+}
+
+img{
+    width:80%;
+    height:100%;
+}
+.Line{
+    width: 100%;
+    height:10px;
+    border-bottom: 0.5px solid black;
+}
+
+#Content{
+    color:gray;
+    margin-top:2%;
+    font-family: 'Jua', sans-serif;
+    font-size: 14pt;
+}
+
+.infoTitle{
+    font-family: 'Jua', sans-serif;
+    font-size: 16pt;
+    padding:3%;
+    margin-top:1%;
+}
+
+#Info_Time{
+    margin-top:4%;
+    padding:1%;
+}
+
+#infoContent1{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#infoContent2{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 18.8%;
+    font-size:14pt;
+}
+
+#info_Price{
+    margin-top:1%;
+    padding:1%;
+}
+
+#infoPrice{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#map{
+    width:100%;
+    height:350px;
+    margin-top:2%;
+    clear:both;
+    z-index: 2;
+}
+
+#addressDiv{
+    width:100%;
+    height:50px;
+    margin-top:5%;
+}
+
+.infos{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#TravelDiv{
+    width:100%;
+    height:50px;
+    
+}
+
+#TagDiv{
+    width:100%;
+    height:100px;
+    margin-top:2%;
+    padding:1%;
+}
+
+#tagTitle{
+    color:blue;
+    font-family: 'Jua', sans-serif;
+    font-size:16pt;
+    padding:1%;
+}
+
+#hashTag{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    font-size:14pt;
+    padding:1%;
+    margin-left:3%;
+}
+
+
+
+#CommentsDiv{
+    width:100%;
+    height:200px;
+    border:solid;
+    margin-top: 2%;
+}
+
+#RatingDiv{
+    width:100%;
+    height:30%;
+    padding:1%;
+
+}
+
+.starR{
+    background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+    background-size: auto 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+  .starR.on{background-position:0 0;
+margin-left: 2%;}
+
+  #RatingTitle{
+    font-family: 'Jua', sans-serif;
+    font-size:18pt;
+    margin-left: 2%; 
+  }
+
+  #comment{
+      width:100%;
+      height:60%;
+      border:solid;
+  }
