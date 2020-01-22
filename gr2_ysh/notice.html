@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Trip Mate - 여행 친구 만들기</title>
-    <link href="../image/logo_title.png" rel="shortcut icon" type="image/x-icon">
+    <link href="logo_title.png" rel="shortcut icon" type="image/x-icon">
     <style>
         header{
             height:200px;
@@ -34,6 +34,8 @@
         }
         #selected_category_div{
             background-color: #E6E6E6;
+            border : 1px solid #D8D8D8;            
+            
         }
         #selected_category{
             color : #2E9AFE;
@@ -45,7 +47,12 @@
         }
         .other_category_div{
             background-color: #FAFAFA;
+            border : 1.1px solid #E6E6E6;            
         }
+        .other_category_div:hover{
+            background-color: #E6E6E6;
+            transition: 100ms;
+        }        
         a{
             text-decoration : none;
             color : black;
@@ -213,8 +220,8 @@
         <div class="nav">
            <div id="category_name">고객센터</div>
            <div id="selected_category_div"><a id="selected_category" href="#">공지사항</a></div>
-           <div class="other_category_div"><a href="#">FAQ</a></div>
-           <div class="other_category_div"><a href="#">Q&amp;A</a></div> 
+           <div class="other_category_div"><a href="FAQ.html">FAQ</a></div>
+           <div class="other_category_div"><a href="Q&A.html">Q&amp;A</a></div> 
         </div>
         </nav>
         <main>
@@ -359,7 +366,7 @@
     <footer>
         <div class = "footer">
         <table class="company_info">
-            <tr><td rowspan="3"><img src="../image/logo.PNG"></td><td>상호</td><td>|</td><td>Trip Mate</td></tr>
+            <tr><td rowspan="3"><img src="logo.PNG"></td><td>상호</td><td>|</td><td>Trip Mate</td></tr>
             <tr><td>팀원</td><td>|</td><td>김현태, 김용승, 권기범, 이형준, 유서희</td></tr>
             <tr><td>소속</td><td>|</td><td>이젠 컴퓨터 아카데미 종로 캠퍼스 / 자바 웹&amp;앱 개발자 양성 과정 / 2조</td></tr>
         </table>
