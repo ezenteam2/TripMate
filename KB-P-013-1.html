@@ -43,9 +43,9 @@
                     infowindow.open(map, marker);
                 });
 
-                $('.starRev span').click(function(){
-                    $(this).parent().children('span').removeClass('on');
-                    $(this).addClass('on').prevAll('span').addClass('on');
+                $("#RatingDiv a").click(function(){
+                    $(this).parent().children("a").removeClass("on");
+                    $(this).addClass("on").prevAll("a").addClass("on");
                     return false;
                 });
             });
@@ -105,8 +105,12 @@
             <div class="Line"></div>
             <div id="CommentsDiv" class="starRev">
                 <div id="RatingDiv">
-                    <a href="#"></a>
-                    
+                    <span id="ratingTitle">별점 : </span>
+                    <a href="#">★</a>
+                    <a href="#">★</a>
+                    <a href="#">★</a>
+                    <a href="#">★</a>
+                    <a href="#">★</a>
                 </div>
 
                 <div class="comment">

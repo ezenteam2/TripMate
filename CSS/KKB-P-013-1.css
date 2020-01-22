@@ -223,3 +223,20 @@ button{
     margin-right: 5%;
     margin-top:0.5%;
 }
+
+#RatingDiv a{
+    text-decoration: none;
+    font-size: 16pt;
+    color:gray;
+}
+
+#RatingDiv a.on{
+    color:gold;
+}
+
+#ratingTitle{
+    font-family: 'Jua', sans-serif;
+    padding:2%;
+    font-size:14pt;
+    margin-left:1%;
+}
