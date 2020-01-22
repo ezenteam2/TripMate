@@ -91,22 +91,15 @@ button{
 }
 
 .inputs:hover{
-    background-color:#B5B2FF;
+    background-color:#ECEBFF;
 }
 
 #inputContent:hover{
-    background-color:#B5B2FF;
+    background-color:#ECEBFF;
 }
 
-.inputs.active{
-    border:1px solid orange;
-}
 
-#inputContent:active{
-    border:1px solid orange;
-}
-
-button:hover{background-color:#B5B2FF;}
+button:hover{background-color:#ECEBFF;}
 nav{
     text-align:center;
     margin-top:2.5%;
