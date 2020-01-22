@@ -35,7 +35,6 @@
         #selected_category_div{
             background-color: #E6E6E6;
             border : 1px solid #D8D8D8;            
-            
         }
         #selected_category{
             color : #2E9AFE;
@@ -43,16 +42,16 @@
             font-size : 18px;            
         }
         #selected_category:hover{
-            text-decoration: underline;
+            text-decoration: underline;        
         }
         .other_category_div{
             background-color: #FAFAFA;
-            border : 1.1px solid #E6E6E6;            
+            border : 1.1px solid #D8D8D8;            
         }
         .other_category_div:hover{
             background-color: #E6E6E6;
             transition: 100ms;
-        }        
+        }
         a{
             text-decoration : none;
             color : black;
@@ -112,48 +111,35 @@
         #search_button:hover{
             text-decoration : underline;
         }
-        .notice_table{
-            border-collapse:collapse;
-            width :750px;
-            margin-bottom: 25px;
-        }
-        
-        .notice_table th{
-            height: 40px;
-            border-top : 4px solid #424242;           
-            border-bottom : 1px solid gray;
-            background-color: #F2F2F2;
-            color : #424242;
-            font-weight: bold;
-        }
-        
-        .notice_table td{
-            height : 30px;
-            padding : 12px;
-            padding-right : 20px;
-            padding-left: 20px;
-            font-size : 15px;
-            font-weight : 500;
-            color:#2E2E2E;
-            border-bottom:1px solid #D8D8D8;
-            }
         a{
             color:#2E2E2E;
             text-decoration: none;
         }
-        td a:hover{
-           text-decoration: underline; 
+        .signin,.pay{
+            border-collapse: collapse;
         }
-        .notice_table td:nth-child(n+2):nth-child(-n+3){
-            text-align: center;
+        .signin{
+            margin-bottom : 50px;
         }
-        .notice_td{
-            font-size : 15px;
+        .signin th, .pay th{
+            text-align: left;
+            font-size: 16px;
+            border: 1px solid black;
         }
-        tfoot td{
-            border-bottom : 4px solid #424242;
-            height : 10px 
+        .signin td, .pay td{
+            font-size: 16px;
+            padding-top : 15px;
+            padding-bottom: 15px;
+            border: 1px solid black;                
         }
+        .signin th:nth-child(1), .pay th:nth-child(1){
+            width:700px;
+        }
+        .signin th:nth-child(2), .pay th:nth-child(2){
+            width:50px;
+            border-right: 0px !important;
+            border-top :  0px !important;
+        }        
         .button {
             position : relative;
             top : -15px;       
@@ -219,139 +205,33 @@
         <nav>
         <div class="nav">
            <div id="category_name">고객센터</div>
-           <div id="selected_category_div"><a id="selected_category" href="#">공지사항</a></div>
-           <div class="other_category_div"><a href="FAQ.html">FAQ</a></div>
+           <div class="other_category_div"><a href="notice.html">공지사항</a></div>
+           <div id="selected_category_div"><a id="selected_category" href="#">FAQ</a></div>
            <div class="other_category_div"><a href="Q&A.html">Q&amp;A</a></div> 
         </div>
         </nav>
         <main>
             <form>   
                 <div class = "h1_search">
-                    <h1>공지사항</h1>
+                    <h1>FAQ</h1>
                     <div id="div1"> </div>
                     <div id="div2">
                         <input id = "search" type="search" name="notice_search" placeholder ="검색어를 입력해주세요">
                         <input id = "search_button" type="button" name="notice_search_button" value="검색">
                     </div>
-                </div>    
-                <table class="notice_table">
-                    <thead>
-                        <tr>
-                            <th>제목</th>
-                            <th>등록일</th>
-                            <th>조회수</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a class="notice_td" href="#">[점검완료] 0:00~2:00 점검완료</a></td>
-                            <td>2020.01.14</td>
-                            <td>1054</td>
-                        </tr>
-                        <tr>
-                            <td><a class="notice_td" href="#">새로운 여행정보 &lt;오사카&gt;가 추가 되었습니다</a></td>
-                            <td>2020.01.14</td>
-                            <td>54345</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>            
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>    
+                </div>
+                <table class="signin">    
+                <tr><th>가입 및 탈퇴</th><th></th></tr>
+                <tr><td>Q. 외국인도 가입및 이용이 가능한가요?</td><td></td></tr>
+                <tr><td>Q. 법인회원으로도 가입 할 수 있나요?</td><td></td></tr>
+                <tr><td>Q. 회원 탈퇴를 하고 싶어요</td><td></td></tr>
                 </table>
+                <table class="pay">
+                <tr><th>결제</th><th></th></tr>
+                <tr><td>Q. 결제 수단에는 어떤 것들이 있나요?</td><td></td></tr>
+                <tr><td>Q. 결제 후에 취소 할 수 있나요?</td><td></td></tr>
+                <tr><td>Q. 결제 내역은 어디에서 볼 수 있나요?</td><td></td></tr>
+                </table>                
                 <div class="button">
                     <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
                     <input type="button" name="page2" value="2">

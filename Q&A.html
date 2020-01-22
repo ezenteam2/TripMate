@@ -35,7 +35,6 @@
         #selected_category_div{
             background-color: #E6E6E6;
             border : 1px solid #D8D8D8;            
-            
         }
         #selected_category{
             color : #2E9AFE;
@@ -47,7 +46,7 @@
         }
         .other_category_div{
             background-color: #FAFAFA;
-            border : 1.1px solid #E6E6E6;            
+            border : 1.1px solid #E6E6E6;
         }
         .other_category_div:hover{
             background-color: #E6E6E6;
@@ -89,7 +88,7 @@
             flex-grow: 1;
         }
         #div1{
-            flex-grow : 200;
+            flex-grow : 50;
             top:10px;
         }
         #div2{
@@ -144,7 +143,7 @@
         td a:hover{
            text-decoration: underline; 
         }
-        .notice_table td:nth-child(n+2):nth-child(-n+3){
+        .notice_table td:nth-child(n+2):nth-child(-n+4){
             text-align: center;
         }
         .notice_td{
@@ -156,7 +155,7 @@
         }
         .button {
             position : relative;
-            top : -15px;       
+            top : -15px;
         }
         input[type=button]{
             background-color : white;
@@ -167,10 +166,19 @@
             font-size: 15px;
             color : #2E2E2E;
         }
+        [type=button]:hover{
+            cursor: pointer;
+        }
+        #writing:hover{
+            cursor: pointer;
+            background-color: #BDBDBD;
+            transition: 100ms;
+        }
         input[type=button]#_selected{
             background-color:#2E9AFE;
             border:1px solid #0080FF;
             color:white;
+            cursor: default;
         }
         input[type=button].direction{
             position : relative;
@@ -179,6 +187,11 @@
         .button{
         margin-left : 35%;
         }
+        #writing{
+            width : 70px;
+            position : relative;
+            left: 240px;
+        }        
         footer{
             position : relative;
             left : 350px;
@@ -219,15 +232,15 @@
         <nav>
         <div class="nav">
            <div id="category_name">고객센터</div>
-           <div id="selected_category_div"><a id="selected_category" href="#">공지사항</a></div>
-           <div class="other_category_div"><a href="FAQ.html">FAQ</a></div>
-           <div class="other_category_div"><a href="Q&A.html">Q&amp;A</a></div> 
+           <div class="other_category_div" onclick="location.href='notice.html'"><a>공지사항</a></div>
+           <div class="other_category_div" onclick="location.href='FAQ.html'"><a>FAQ</a></div>
+           <div id="selected_category_div" onclick="location.href='#'"><a id="selected_category">Q&amp;A</a></div> 
         </div>
         </nav>
         <main>
             <form>   
                 <div class = "h1_search">
-                    <h1>공지사항</h1>
+                    <h1>Q&amp;A 게시판</h1>
                     <div id="div1"> </div>
                     <div id="div2">
                         <input id = "search" type="search" name="notice_search" placeholder ="검색어를 입력해주세요">
@@ -238,32 +251,26 @@
                     <thead>
                         <tr>
                             <th>제목</th>
+                            <th>작성자</th>
                             <th>등록일</th>
                             <th>조회수</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a class="notice_td" href="#">[점검완료] 0:00~2:00 점검완료</a></td>
+                            <td><a class="notice_td" href="#">아프리카 여행지도 소개해 주시면 안되나요?</a></td>
+                            <td><a class="notice_td"  href="#">클레어</a></td>
                             <td>2020.01.14</td>
-                            <td>1054</td>
+                            <td>50</td>
                         </tr>
                         <tr>
-                            <td><a class="notice_td" href="#">새로운 여행정보 &lt;오사카&gt;가 추가 되었습니다</a></td>
+                            <td><a class="notice_td" href="#">&emsp;ㄴ&emsp; [ RE : 곧 아프리카 카테고리가 추가됩니다! ]</a></td>
+                            <td><a class="notice_td"  href="#">관리자</a></td>
                             <td>2020.01.14</td>
-                            <td>54345</td>
+                            <td>45</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -272,18 +279,10 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -292,18 +291,10 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -312,18 +303,10 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -332,13 +315,64 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -346,6 +380,7 @@
                     </tbody>
                     <tfoot>            
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -358,7 +393,8 @@
                     <input type="button" name="page3" value="3">
                     <input class ="direction" type="button" name="next" value=">">
                     <input class ="direction" type="button" name="last_page" value=">>">
-                </div>
+                    <input id="writing" type="button" value="글쓰기">                 
+                </div>               
             </form>
         </main>    
     </section>
