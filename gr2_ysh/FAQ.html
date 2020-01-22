@@ -52,10 +52,9 @@
             background-color: #E6E6E6;
             transition: 100ms;
         }
-        a{
-            text-decoration : none;
-            color : black;
-            font-size : 18px;             
+        .other_category_div, .seleted_category_div{
+            cursor: pointer;
+            font-size: 18px;            
         }
         a:hover{
             text-decoration: underline;
@@ -144,7 +143,7 @@
             position : relative;
             top : -15px;       
         }
-        input[type=button]{
+        [type=button]{
             background-color : white;
             border : 1px solid gray;
             width : 30px;
@@ -152,13 +151,15 @@
             font-weight : bold;
             font-size: 15px;
             color : #2E2E2E;
+            cursor: pointer;
         }
-        input[type=button]#_selected{
+        [type=button]#_selected{
             background-color:#2E9AFE;
             border:1px solid #0080FF;
             color:white;
+            cursor: default;
         }
-        input[type=button].direction{
+        [type=button].direction{
             position : relative;
             left : 5px;
         }
@@ -180,14 +181,16 @@
         img{
             height : 100px;
         }
+        .company_info td, .company_info a{
+            font-size : 16px;            
+        }
         #thetd{
-            font-size : 15px;
-            position: relative;
-            left: 40px;
             font-weight: bold;
+            text-align: right;
         }
         .company_info td:nth-child(5){
-            width : 300px;
+            width : 235px;
+            text-align: right;
         }
     </style>
     <script></script>
@@ -201,9 +204,9 @@
         <nav>
         <div class="nav">
            <div id="category_name">고객센터</div>
-           <div class="other_category_div"><a href="notice.html">공지사항</a></div>
-           <div id="selected_category_div"><a id="selected_category" href="#">FAQ</a></div>
-           <div class="other_category_div"><a href="Q&A.html">Q&amp;A</a></div> 
+           <div class="other_category_div" onclick="location.href='notice.html'"><a>공지사항</a></div>
+           <div id="selected_category_div" onclick="location.href='#'"><a id="selected_category">FAQ</a></div>
+           <div class="other_category_div" onclick="location.href='Q&A.html'"><a>Q&amp;A</a></div> 
         </div>
         </nav>
         <main>
