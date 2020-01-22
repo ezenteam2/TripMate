@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#f6f9fc;
+}
+
+
+
+main{
+    
+    padding-left: 22%;
+    padding-right: 22%;
+    margin-top:15%;
+    z-index: -1;
+}
+#title{
+    text-align: center;
+}
+#category{
+    color:blue;
+    font-family: 'Jua', sans-serif;
+}
+
+#Title{
+    font-weight:700;
+    font-size: 24pt;
+    font-family: 'Jua', sans-serif;
+}
+
+#Date{
+    margin-top:1%;
+}
+
+#ImageDiv{
+    width:100%;
+    height:350px;
+    margin-top:3%;
+    text-align: center;
+}
+
+img{
+    width:80%;
+    height:100%;
+}
+.Line{
+    width: 100%;
+    height:10px;
+    border-bottom: 0.5px solid black;
+}
+
+#Content{
+    color:gray;
+    margin-top:2%;
+    font-family: 'Jua', sans-serif;
+    font-size: 14pt;
+}
+
+.infoTitle{
+    font-family: 'Jua', sans-serif;
+    font-size: 16pt;
+    padding:3%;
+    margin-top:1%;
+}
+
+#Info_Time{
+    margin-top:4%;
+    padding:1%;
+}
+
+#infoContent1{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#infoContent2{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 18.8%;
+    font-size:14pt;
+}
+
+#info_Price{
+    margin-top:1%;
+    padding:1%;
+}
+
+#infoPrice{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#map{
+    width:100%;
+    height:350px;
+    margin-top:2%;
+    clear:both;
+}
+
+#addressDiv{
+    width:100%;
+    height:50px;
+    margin-top:5%;
+}
+
+.infos{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    margin-left: 4%;
+    font-size:14pt;
+}
+
+#TravelDiv{
+    width:100%;
+    height:50px;
+    
+}
+
+#TagDiv{
+    width:100%;
+    height:100px;
+    margin-top:2%;
+    padding:1%;
+}
+
+#tagTitle{
+    color:blue;
+    font-family: 'Jua', sans-serif;
+    font-size:16pt;
+    padding:1%;
+}
+
+#hashTag{
+    color:gray;
+    font-family: 'Jua', sans-serif;
+    font-size:14pt;
+    padding:1%;
+    margin-left:3%;
+}
+
+
+
+#CommentsDiv{
+    width:100%;
+    height:220px;
+    border:solid;
+    margin-top: 2%;
+}
+
+#RatingDiv{
+    width:100%;
+    height:30%;
+    padding:1%;
+    margin-top:1%;
+
+}
+
+
+
+  #RatingTitle{
+    font-family: 'Jua', sans-serif;
+    font-size:18pt;
+    margin-left: 2%; 
+  }
+
+
+
+  .ContentTitle{
+    width:30%;
+    height:100%;
+    padding-top:20px;
+    font-family: 'Jua', sans-serif;
+    font-size:14pt;
+    margin-left:4%;
+}
+div#comment{
+    flex-grow:1;
+    position: relative;
+    margin-left:-4%;
+}
+
+#comment{
+    position: relative;
+    width:100%;
+    height:60%;
+    border:1px solid red;
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+#inputContent{
+    width:80%;
+    height:80px;
+    margin-left:15%;
+    border:1px solid black;
+    margin-top:-7%;
+}
+
+#Btns{
+   width:100%;
+   height :40px;
+   text-align: right;
+}
+
+button{
+    width:100px;
+    height:40px;
+    margin-right: 5%;
+    margin-top:0.5%;
+}
+
+#RatingDiv a{
+    text-decoration: none;
+    font-size: 16pt;
+    color:gray;
+}
+
+#RatingDiv a.on{
+    color:gold;
+}
+
+#ratingTitle{
+    font-family: 'Jua', sans-serif;
+    padding:2%;
+    font-size:14pt;
+    margin-left:1%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gugi&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean');
+
+
+div.header{
+    width:100%;
+    height:200px;
+    margin-left:-8px;
+    margin-top:-30px;
+    position: fixed;
+    z-index: 2;
+    background-color: #f6f9fc;
+}
+
+div.logo{
+    width:300px;
+    height:80px;
+    position: absolute;
+    left:50%;
+    margin-left: -150px;
+    top:22%;
+}
+
+div.signIn{
+    position:absolute;
+    height:15%;
+    width:15%;
+    text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgb(28, 168, 28);
+    border-radius: 20ch;
+    color:white;
+    left:80%;
+    top:17%;
+    padding-top:20px;
+    padding-bottom: 10px;
+    font-weight:700;
+    cursor: pointer;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+div.contents{
+    position: relative;
+    width:101%;
+    margin-left: -8px;
+}
+
+video.video {
+    position: absolute;
+    width:100%;
+}
+
+div.navi{
+    position: fixed;
+    width:100%;
+    height:70px;
+    display:flex;
+    flex-direction: row;
+    border-top:solid 3px;
+    transition:1s;
+    z-index: 2;
+    top:15%;
+}
+
+div.navi>div{
+    flex-grow:1;
+}
+
+div.text{
+    text-align: center;
+    font-size:35px;
+    padding-top:15px;
+    height: 56px;
+    cursor: pointer;
+    transition:1s;
+    color:gray;
+}
+
+ul.menu{
+    margin-top:-3px;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #f6f9fc;
+    border-radius: 0% 0% 10% 10%;
+    border-left: solid 1px;
+    border-bottom:solid 1px;
+    border-right: solid 1px;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+
+ul.menu>li{
+    position: relative;
+    right:14px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+div.widget {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:1100px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+div.widget>div.message{
+    flex-grow: 6;
+    font-size:40px;
+    padding-top: 20%;
+    padding-left:25%;
+    color:rgba(245, 245, 220, 0.7);
+    
+}
+
+div.widget>div.footer{
+    flex-grow:2;
+    border-top:solid 1px;
+    background-color:#f6f9fc;
+}
+
+body{
+    background-color:#f6f9fc;
+}
+
+*{
+    font-family: 'Jua', sans-serif;
+    font-size:20px;
+}
