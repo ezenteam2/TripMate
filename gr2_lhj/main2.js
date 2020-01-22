@@ -21,8 +21,11 @@ function handleMenuIn(event){
     parentMenu.style.backgroundColor="#f6f9fc";
     parentMenu.style.borderBottom="solid 1px";
     bigMenu.style.color="black";
-    smallMenu.style.animation="1s fadeIn";
-    smallMenu.style.animationFillMode="forwards";
+    smallMenu.style.transition='1s';
+    smallMenu.style.opacity='1';
+    smallMenu.style.visibility='visible';
+    // smallMenu.style.animation="1s fadeIn";
+    // smallMenu.style.animationFillMode="forwards";
     bigMenu.style.backgroundColor="rgb(245,245,245)";
 }
 
@@ -32,8 +35,11 @@ function handleMenuOut(event){
     const bigMenu=event.target.children[0];
     parentMenu.style.backgroundColor="transparent";
     parentMenu.style.borderBottom="none";
-    smallMenu.style.animation="0s fadeOut";
-    smallMenu.style.animationFillMode="backwards";
+    smallMenu.style.transition='0s';
+    smallMenu.style.opacity='0';
+    smallMenu.style.visibility='hidden';
+    // smallMenu.style.animation="0s fadeOut";
+    // smallMenu.style.animationFillMode="backwards";
     bigMenu.style.color="gray";
     bigMenu.style.backgroundColor="transparent";
 }
