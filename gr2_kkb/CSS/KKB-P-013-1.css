@@ -298,6 +298,7 @@ div.navi{
     transition:1s;
     z-index: 2;
     top:15%;
+	background-color:#f6f9fc;
 }
 
 div.navi>div{
