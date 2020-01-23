@@ -38,8 +38,16 @@
         border:2px solid #D8D8D8;
     }
     a {text-decoration:none;}
-    a:hover{background-color:#F2F2F2;}	
-    .footer{display: flex;
+    hover{background-color:#F2F2F2;}	
+    footer{
+        position : relative;
+        left : 350px;
+        margin-top:50px;
+        margin-bottom: 50px;
+        width:1000px !important;            
+    }
+    .footer{            
+        display: flex;
         flex-direction: row;
         width : 1170px;
     }
@@ -68,14 +76,14 @@
 
 <body>
 <p style="text-align:center">
-<img src="logo.png" width="150" style="margin:30px"><br>
+<a href="../gr2_lhj/main2.html"><img src="logo.png" width="150" style="margin:30px"></a><br>
 <input type="text" name="id01" placeholder="아이디" style="width:300px; height:40px; margin:10px;"><br>
 <input type="password" name="pw01" placeholder="비밀번호" style="width:300px; height:40px; margin:10px;"><br><br>
-<input type="submit" name="login01" value="로그인" style="width:100px; height:40px;">
-<input type="submit" name="submit01" value="회원가입" style="width:100px; height:40px;"><br><br>
+<a href="../gr2_lhj/main2_login.html"><input type="submit" name="login01" value="로그인" style="width:100px; height:40px;"></a>
+<a href="ht_p_011.html"><input type="submit" name="submit01" value="회원가입" style="width:100px; height:40px;"></a><br><br>
 <a href="../a01_basic/index.jsp">아이디 찾기</a>       <a href="../a02_html/a01_start.html">비밀번호 찾기</a><br><br>
-<input type="button" name="naverlogin" value="NAVER LOGIN" style="width:250px; height:40px; margin:10px;">
-<input type="button" name="googlelogin" value="GOOGLE LOGIN" style="width:250px; height:40px; margin:10px;">
+<a href="http://www.naver.com/"><input type="button" name="naverlogin" value="NAVER LOGIN" style="width:250px; height:40px; margin:10px;"></a>
+<a href="http://www.google.com/"><input type="button" name="googlelogin" value="GOOGLE LOGIN" style="width:250px; height:40px; margin:10px;"></a>
 
 	    <footer>
         <div class = "footer">
