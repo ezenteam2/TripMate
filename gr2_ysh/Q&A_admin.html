@@ -51,7 +51,8 @@
                 padding-left: 60px;
                 padding-top: 30px;
                 padding-bottom: 30px;
-                border-right : 1px solid black;                
+                border-right : 1px solid black; 
+                background-color: #BDBDBD;                
             }
             summary::-webkit-details-marker{
                 display:none
@@ -72,7 +73,9 @@
                 margin-left: -1px;
                 cursor: pointer;
             }
-
+            #selected{
+                background-color: #A4A4A4;                
+            }
             .summary_p:hover{
                 background-color: #A4A4A4;                
             }
@@ -237,12 +240,12 @@
                     <li id="admin">관리자페이지</li>
                     <li onclick="location.href='#'">로그인</li>
                     <li onclick="location.href='#'">웹 통계</li>
-                    <details>
+                    <details open>
                         <summary>고객센터 관리</summary>
                             <div>
                             <p class="summary_p" onclick="location.href='notice_admin.html'">▶ 공지사항 관리</p>
                             <p class="summary_p" onclick="location.href='FAQ_admin.html'">▶ FAQ 관리</p>
-                            <p class="summary_p" onclick="location.href='Q&A_admin.html'">▶ Q&amp;A 게시판 관리</p>
+                            <p class="summary_p" id="selected" onclick="location.href='Q&A_admin.html'">▶ Q&amp;A 게시판 관리</p>
                             </div>
                     </details> 
                     <li onclick="location.href='#'">여행 정보 관리</li>
