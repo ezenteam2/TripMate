@@ -2,86 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="ys_p_014.css">
+
 <title>Insert title here</title>
-<style>
-#topMenu {
-	display: flex; justify-content: center; align-items: center; padding: .50em; height: 55px;
-
-
-}
-
-#topMenu ul {
-	list-style-type: none; 
-	margin: 0px; 
-	padding: 0px; 
-}
-
-#topMenu ul li { 
-	color: white; 
-	background-color: #2d2d2d; 
-	float: left; 
-	line-height: 30px; 
-	vertical-align: middle; 
-	text-align: center; 
-	position: relative;
-}
-
-.menuLink, .submenuLink { 
-	text-decoration: none; 
-	display: block; 
-	width: 150px; 
-	font-size: 12px; 
-	font-weight: bold; 
-	font-family: "Trebuchet MS", Dotum; /* 기본 폰트를 영어/한글 순서대로 설정 */
-}
-
-.menuLink { 
-	color: white;
-}
-
-.topMenuLi:hover .menuLink { 
-	color: blue; 
-	background-color: #4d4d4d; 
-}
-
-.submenuLink { 
-	color: #2d2d2d; 
-	background-color: white; 
-	border: solid 1px black; 
-	margin-top: -1px; 
-}
-
-
-
-.submenu { 
-	position: absolute; 
-	height: 0px; 
-	overflow: hidden; 
-	transition: height .2s; 
-	-webkit-transition: height .2s;
-	-moz-transition: height .2s;
-	
-	-o-transition: height .2s;
-	
-}
-
-.topMenuLi:hover .submenu { 
-	height: 93px; 
-}
-
-.submenuLink:hover { 
-	color: red; 
-	background-color: #dddddd; 
-}
-	
-.submit{
-	background-color: pink;	color:black; height:50px; width:100px; align:center;
-}
-</style>
+<script type="text/javascript">
+</script>
 </head>
 <body>
+	<div class="header">
+        <div class="logo" style="text-align:center;">
+        <img src="photo\logo.png" alt="로고" width="300" height="80" onclick="location.href='http://www.naver.com'">
+        </div>
 
-<header><h1>카테고리별 매칭</h1></header>
 	<nav id="topMenu" >
 		<ul>
 			<li class="topMenuLi"><a class="menuLink"
@@ -120,7 +52,12 @@
 		</ul>
 	</nav>
 
-<br><br><br><br>
-<input type="button"  class="submit" value="매칭찾기" align="center">
+<br>
+<div class="button" 
+onClick="location.href=''" style="cursor:pointer;">매칭찾기</div>
+<br>
+<div class="content">
+
+</div>
 </body>
 </html>
