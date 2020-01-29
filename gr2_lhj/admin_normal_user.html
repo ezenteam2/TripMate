@@ -381,6 +381,18 @@
                 button.addEventListener("mouseenter", editButtonMouseIn);
                 button.addEventListener("mouseleave", editButtonMouseOut);
             });
+
+            const userTable = document.querySelector('table[class=userTable]');
+            const thList = userTable.querySelectorAll('th');
+            const selectAll = thList[0];
+            selectAll.addEventListener('click', (event)=>{
+                const checkBoxes=userTable.querySelectorAll('input[type=checkbox');
+                checkBoxes.forEach(
+                    (checkBox)=>{
+                        checkBox.style.check="checked";
+                    }
+                )
+            })
         </script>        
     </body>
 </html>

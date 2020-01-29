@@ -24,9 +24,12 @@
                 width : 300px;
                 font-size : 20px;
                 margin-top : -10px;
-                position : sticky;
-                font-weight: bold;
+                font-weight: bold; 
+                cursor: pointer;
             }
+            .admin_category>li:hover, .admin_category>p:hover, .admin_category summary:hover{
+                background-color: #BDBDBD;
+            }            
             #admin{
                 font-size: 30px;
                 font-weight : bold;
@@ -40,44 +43,43 @@
                 padding : 30px;
                 border: 1px solid black;
                 border-top : 1px solid #A4A4A4;
-                margin-top: -1px;
                 padding-left : 60px;
-                border-bottom: 1px solid #A4A4A4; 
+                border-bottom: 1px solid #A4A4A4;
+                margin-top: -1px;
+            }            
+            summary{
+                padding-left: 60px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-right : 1px solid black;
+                background-color: #BDBDBD;                
             }
-            .board_sub div{
-                position: relative;
-                left : 30px;
-                width: 214px;
+            summary::-webkit-details-marker{
+                display:none
             }
-            .board_sub{
-                margin-bottom : -1px;
+            details>div{
                 background-color: #BDBDBD;
-                padding-bottom: 6px;
                 border-right: 1px solid black;
-                margin-top: -25px;
-                padding-top: 8px;
-                padding-bottom: 20px;
-            }            
-            .board_suby>li:hover{
-                background-color : #BDBDBD;
-                transition: 500ms;
-                cursor: pointer;                
+                padding-bottom: 1px;
             }
-            .board_main{
-                background-color : #BDBDBD;
-            }
-            ul>div{
-                font-size:17px;
-                position: relative;
-                right : 30px;
-                margin-left: -80px;
-                margin-right: -60px;
-                padding : 15px;                
+            .summary_p{
+                font-size:18px;
+                position: relative;              
                 padding-left: 80px;
-           }
-            ul>div#div,ul>div:hover{
-                background-color: #A4A4A4;
-            }            
+                padding-bottom: 15px;                
+                transition: 800px;
+                margin-top: -10px;
+                padding-top: 15px; 
+                margin-left: -1px;
+                cursor: pointer;
+            }
+            .summary_p:hover{
+                background-color: #A4A4A4;                
+            }
+            #selected{
+                background-color: #A4A4A4;                
+            }
+
             li{
                 list-style : none;
             }
@@ -87,7 +89,7 @@
                 top:2.2px;
                 display: inline;
                 font-size:30px;
-            }
+            }            
             a{
                 color:black;
                 text-decoration: underline;
@@ -120,7 +122,134 @@
             #writing{
                 position: relative;
                 left : 980px;
-            }          
+            }
+            #myBtn{
+                background-color: white;
+                width : 70px;
+                height : 30px;
+                border : 1px solid black;            
+                float : right;
+                position: relative;
+                top : 10px;
+            }
+            #myBtn2{
+                background-color: white;
+                width : 70px;
+                height : 30px;
+                margin-bottom: 5px;
+                border : 1px solid black;
+                
+            }            
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0,0,0,0.9);
+            }
+            .modal-content {
+              background-color: #fefefe;
+              margin: 5% auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 40%;
+              height: 75%;
+              overflow: auto;    
+            }
+            .ck-editor__editable{
+                min-height : 520px;
+            }
+            .close {
+              color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+              color: black;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            .modal2 {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0,0,0,0.9);
+            }
+            .modal-content2 {
+              background-color: #fefefe;
+              margin: 5% auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 20%;
+              height: 15%;
+              overflow: auto;
+              border : 1px double black;
+            }
+            .close2 {
+              color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            .close2:hover,
+            .close2:focus {
+              color: black;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            #deleteMessege{
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            div>h1{
+                text-align: center;
+                font-weight: bold; 
+                font-size : 20px;
+            }
+            .deleteButton{
+                position: relative;
+                left : 90px;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: 15px;
+                margin-left: 15px;
+                background-color: white;
+                border: 1px solid gray;
+                margin-top: 10px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .deleteButton:hover{
+                background-color: #A4A4A4;
+                transition: 300ms;
+            }
+            [type="text"]{
+                font-size : 18px;
+                border : 1px solid #A4A4A4;
+                width : 100%;
+                margin-top : 20px;
+                margin-bottom : 20px;
+                padding-top : 10px;
+                padding-bottom : 10px;
+            }
+            [type="submit"]{
+                float : right;
+                margin-top: 10px;
+                
+            }
             [src="excelLogo.png"]{
                 height : 30px;
                 position : relative;
@@ -131,7 +260,7 @@
             [src="excelLogo.png"]:hover{
                 cursor: pointer;
             }
-            .adminButton[type="button"]{
+            .adminButton{
                 background-color: white;
                 width : 70px;
                 height : 30px;
@@ -215,7 +344,7 @@
                 left : 5px;
             }
         </style>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     </head>
     <body>
         <section>     
@@ -224,13 +353,14 @@
                     <li id="admin">관리자페이지</li>
                     <li onclick="location.href='#'">로그인</li>
                     <li onclick="location.href='#'">웹 통계</li>
-                    <li class="board_main" onclick="backgroundColor:#BDBDBD">
-                        고객센터 관리</li>
-                        <ul class="board_sub" style="display:none;">
-                            <div onclick="location.href='notice_admin.html'"><li>▶ 공지사항 관리</li></div>
-                            <div id="selected_category" onclick="location.href='FAQ_admin.html'" style=><li>▶ FAQ 관리</li></div>
-                            <div onclick="location.href='Q&A_admin.html'" style=><li>▶ Q&amp;A 게시판 관리</li></div>
-                        </ul>  
+                    <details open>
+                        <summary>고객센터 관리</summary>
+                            <div>
+                            <p class="summary_p" onclick="location.href='notice_admin.html'">▶ 공지사항 관리</p>
+                            <p class="summary_p" id="selected" onclick="location.href='FAQ_admin.html'">▶ FAQ 관리</p>
+                            <p class="summary_p" onclick="location.href='Q&A_admin.html'">▶ Q&amp;A 게시판 관리</p>
+                            </div>
+                    </details>  
                     <li onclick="location.href='#'">여행 정보 관리</li>
                     <li onclick="location.href='#'">일반 회원 관리</li>
                     <li onclick="location.href='#'">가이드 회원 관리</li>
@@ -243,10 +373,71 @@
                 <div class = "div2">
                 <article>
                     <p id="title">FAQ 관리</p>
-                    <input class="adminButton" id="writing" type="button" value="글쓰기">                     
+                    <button class="adminButton" id="myBtn">글쓰기</button>
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form action="" method="post">
+                            <input type="text" name ="title" placeholder="제목을 입력해주세요">
+                            <div id="editor"></div>
+                            <script>
+                                ClassicEditor
+                                    .create( document.querySelector( '#editor' ) )
+                                    .catch( error => {
+                                        console.error( error );
+                                    } );
+                            </script>                       
+                            <input class="adminButton" type="submit" value="저장">         
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                    </script>
                     <hr>
                     <img src="excelLogo.png" title="엑셀로 다운받기"><br>
-                    <input class="adminButton" type="button" value="삭제">
+                    <input type="button" class="adminButton" id="myBtn2" value="삭제">
+                    <div id="myModal2" class="modal2">
+
+                        <div class="modal-content2">
+                            <span class="close2">&times;</span>
+                            <div id="deleteMessege"> 
+                                <h1>정말 삭제하시겠습니까?</h1>
+                                <button class="deleteButton" id="ok">삭제</button>
+                                <button class="deleteButton" id="cancle">취소</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                    var modal2 = document.getElementById("myModal2");
+                    var btn2 = document.getElementById("myBtn2");
+                    var span2 = document.getElementsByClassName("close2")[0];
+                    btn2.onclick = function() {
+                      modal2.style.display = "block";
+                    }
+                    span2.onclick = function() {
+                      modal2.style.display = "none";
+                    }
+                    window.onclick = function(event) {
+                      if (event.target == modal2) {
+                        modal2.style.display = "none";
+                      }
+                    }
+                    </script>                    
                     <select name="date">
                         <option value="recent">최근날짜순</option>
                         <option value="old">오래된날짜순</option>
@@ -287,15 +478,6 @@
                 </div>    
         </section>                      
         <script>
-            $(".board_main").click(function(){
-                if($(".board_sub").is(":visible")){
-                    $(".board_sub").css("display","none");
-
-                }
-                else{
-                    $(".board_sub:not(.board_main)").css("display","block");
-                }
-            })
         </script>        
     </body>
 </html>
