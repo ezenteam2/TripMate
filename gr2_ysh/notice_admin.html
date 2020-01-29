@@ -131,7 +131,13 @@
             }
             .adminButton:hover{
                 cursor: pointer;
+                background-color: #A4A4A4;
+                transition: 300ms;                
             }
+            #modal_title{
+                font-size: 30px;
+                font-weight: bold;
+            }            
             #myBtn{
                 background-color: white;
                 width : 70px;
@@ -170,7 +176,7 @@
               overflow: auto;    
             }
             .ck-editor__editable{
-                min-height : 520px;
+                min-height : 500px;
             }
             .close {
               color: #aaa;
@@ -377,6 +383,7 @@
                     <div id="myModal" class="modal">
 
                         <div class="modal-content">
+                            <span id ="modal_title">새 글 쓰기</span>
                             <span class="close">&times;</span>
                             <form action="" method="post">
                             <input type="text" name ="title" placeholder="제목을 입력해주세요">
