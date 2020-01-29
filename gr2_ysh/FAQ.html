@@ -114,34 +114,41 @@
             color:#2E2E2E;
             text-decoration: none;
         }
-        .signin,.pay{
+        .signin,.pay,.matching{
             border-collapse: collapse;
         }
-        .signin{
+        .signin,.pay,.matching{
             margin-bottom : 50px;
         }
-        .signin th, .pay th{
+        .signin th, .pay th,.matching th{
             text-align: left;
-            font-size: 16px;
-            border: 1px solid black;
+            font-size: 20px;
+            border-bottom: 2px solid black;
         }
-        .signin td, .pay td{
+        .signin td, .pay td,.matching td{
             font-size: 16px;
             padding-top : 15px;
             padding-bottom: 15px;
-            border: 1px solid black;                
+            border-bottom: 1px solid #A4A4A4;
+            margin-bottom: 0px;
+            position :relative;
+            top : 5px;
         }
-        .signin th:nth-child(1), .pay th:nth-child(1){
+        .signin th:nth-child(1), .pay th:nth-child(1),.matching th:nth-child(1){
             width:700px;
         }
-        .signin th:nth-child(2), .pay th:nth-child(2){
+        .signin th:nth-child(2), .pay th:nth-child(2),.matching th:nth-child(2){
             width:50px;
-            border-right: 0px !important;
-            border-top :  0px !important;
-        }        
+        
+        }
+        .directionClick{
+            height: 15px;
+            float: right;
+            margin-right : 15px;
+        }
         .button {
             position : relative;
-            top : -15px;       
+            bottom: 20px;      
         }
         [type=button]{
             background-color : white;
@@ -221,16 +228,22 @@
                 </div>
                 <table class="signin">    
                 <tr><th>가입 및 탈퇴</th><th></th></tr>
-                <tr><td>Q. 외국인도 가입및 이용이 가능한가요?</td><td></td></tr>
-                <tr><td>Q. 법인회원으로도 가입 할 수 있나요?</td><td></td></tr>
-                <tr><td>Q. 회원 탈퇴를 하고 싶어요</td><td></td></tr>
+                <tr><td>Q. 외국인도 가입및 이용이 가능한가요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 법인회원으로도 가입 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 회원 탈퇴를 하고 싶어요</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
                 </table>
                 <table class="pay">
                 <tr><th>결제</th><th></th></tr>
-                <tr><td>Q. 결제 수단에는 어떤 것들이 있나요?</td><td></td></tr>
-                <tr><td>Q. 결제 후에 취소 할 수 있나요?</td><td></td></tr>
-                <tr><td>Q. 결제 내역은 어디에서 볼 수 있나요?</td><td></td></tr>
-                </table>                
+                <tr><td>Q. 결제 수단에는 어떤 것들이 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 결제 후에 취소 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 결제 내역은 어디에서 볼 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                </table>
+                <table class="matching">
+                <tr><th>여행메이트</th><th></th></tr>
+                <tr><td>Q. 여행메이트와 가이드 매칭은 같은 서비스인가요??</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 여행메이트는 어떤 메커니즘으로 구동하나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 여행메이트가 마음에 들지 않으면 어떡하죠?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                </table>                                
                 <div class="button">
                     <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
                     <input type="button" name="page2" value="2">

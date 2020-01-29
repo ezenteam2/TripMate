@@ -124,7 +124,11 @@
             #writing{
                 position: relative;
                 left : 875px;
-            }             
+            }
+            #modal_title{
+                font-size: 30px;
+                font-weight: bold;
+            }            
             [src="excelLogo.png"]{
                 height : 30px;
                 position : relative;
@@ -145,6 +149,8 @@
             }
             .adminButton:hover{
                 cursor:  Pointer;
+                background-color: #A4A4A4;
+                transition: 300ms;                
             }
             #myBtn{
                 background-color: white;
@@ -184,7 +190,7 @@
               overflow: auto;    
             }
             .ck-editor__editable{
-                min-height : 520px;
+                min-height : 500px;
             }
             .close {
               color: #aaa;
@@ -391,6 +397,7 @@
                     <div id="myModal" class="modal">
 
                         <div class="modal-content">
+                            <span id ="modal_title">새 글 쓰기</span>
                             <span class="close">&times;</span>
                             <form action="" method="post">
                             <input type="text" name ="title" placeholder="제목을 입력해주세요">
