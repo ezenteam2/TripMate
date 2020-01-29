@@ -119,6 +119,7 @@
         }
         .signin,.pay,.matching{
             margin-bottom : 50px;
+            width : 750px;
         }
         .signin th, .pay th,.matching th{
             text-align: left;
@@ -138,13 +139,21 @@
             width:700px;
         }
         .signin th:nth-child(2), .pay th:nth-child(2),.matching th:nth-child(2){
-            width:50px;
-        
+            width:70px;
         }
         .directionClick{
             height: 15px;
             float: right;
             margin-right : 15px;
+        }
+        .directionClick:hover{
+            cursor: pointer;
+        }
+        .signin tr:nth-child(2n+1), .pay tr:nth-child(2n+1), .matching tr:nth-child(2n+1){
+            display: none;
+        }
+        .signin tr:first-child, .pay tr:first-child, .matching tr:first-child{
+            display: block !important;
         }
         .button {
             position : relative;
@@ -226,24 +235,40 @@
                         <input id = "search_button" type="button" name="notice_search_button" value="검색">
                     </div>
                 </div>
-                <table class="signin">    
+                <script>
+               function detailsOfJs(explain_id){ if(document.querySelector(explain_id).style.display === 'none'){ document.querySelector(explain_id).style.display = 'block';
+                }else{ document.querySelector(explain_id).style.display = 'none';
+                }
+                }
+                </script>
+                <table class="signin">                   
                 <tr><th>가입 및 탈퇴</th><th></th></tr>
-                <tr><td>Q. 외국인도 가입및 이용이 가능한가요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 법인회원으로도 가입 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 회원 탈퇴를 하고 싶어요</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 외국인도 가입및 이용이 가능한가요?</td><td>
+                <img class="directionClick" src="direction.png" id="direction" onclick="detailsOfJs('#explain1');"></td></tr>
+                <tr id="explain1"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 법인회원으로도 가입 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain2');"></td></tr>
+                <tr id="explain2"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 회원 탈퇴를 하고 싶어요</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain3');"></td></tr>
+                <tr id="explain3"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
                 </table>
                 <table class="pay">
                 <tr><th>결제</th><th></th></tr>
-                <tr><td>Q. 결제 수단에는 어떤 것들이 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 결제 후에 취소 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 결제 내역은 어디에서 볼 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
+                <tr><td>Q. 결제 수단에는 어떤 것들이 있나요?</td><td><img id="dir1" class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain4');"></td></tr>
+                <tr id="explain4"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 결제 후에 취소 할 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain5');"></td></tr>
+                <tr id="explain5"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 결제 내역은 어디에서 볼 수 있나요?</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain6');"></td></tr>
+                <tr id="explain6"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
                 </table>
                 <table class="matching">
                 <tr><th>여행메이트</th><th></th></tr>
-                <tr><td>Q. 여행메이트와 가이드 매칭은 같은 서비스인가요??</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 여행메이트는 어떤 메커니즘으로 구동하나요?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                <tr><td>Q. 여행메이트가 마음에 들지 않으면 어떡하죠?</td><td><img class="directionClick" src="direction.png" alt="direction"></td></tr>
-                </table>                                
+                <tr><td>Q. 여행메이트와 가이드 매칭은 같은 서비스인가요??</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain7');"></td></tr>
+                <tr id="explain7"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 여행메이트는 어떤 메커니즘으로 구동하나요?</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain8');"></td></tr>
+                <tr id="explain8"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                <tr><td>Q. 여행메이트가 마음에 들지 않으면 어떡하죠?</td><td><img class="directionClick" src="direction.png" alt="direction" onclick="detailsOfJs('#explain9');"></td></tr>
+                <tr id="explain9"><td>위와같이 팔로우 기능이 있다고 예로 들어보겠습니다. 한눈에봐도 왼쪽부터 차례대로 페이스북, 인스타그램, 트위터라는것을 알수있습니다. 글귀로 페이스북, 인스타그램, 트위터 이렇게 쓰는것보다 픽토그램을 쓰는것이 훨씬 깔끔합니다. 이처럼 픽토그램은 아이콘만봐도 직관적으로 무슨 기능인지 유추가능하게 해주기때문에 특정기능을 글로 표현하기 보다는 픽토그램으로 표현을 많이합니다.</td></tr>
+                </table>                               
                 <div class="button">
                     <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
                     <input type="button" name="page2" value="2">
