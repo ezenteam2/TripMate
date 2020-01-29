@@ -135,7 +135,7 @@
             [src="excelLogo.png"]:hover{
                 cursor: pointer;
             }            
-            .adminButton[type="button"]{
+            .adminButton{
                 background-color: white;
                 width : 70px;
                 height : 30px;
@@ -358,7 +358,7 @@
                 left : 5px;
             }            
         </style>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     </head>
     <body>
         <section>     
@@ -401,7 +401,8 @@
                                     .catch( error => {
                                         console.error( error );
                                     } );
-                            </script>                       <input class="adminButton" type="submit" value="저장">         
+                            </script>                       
+                            <input class="adminButton" type="submit" value="저장">         
                             </form>
                         </div>
                     </div>
@@ -451,8 +452,6 @@
                       }
                     }
                     </script>                    
-                    <img src="excelLogo.png" title="엑셀로 다운받기"><br>
-                    <input class="adminButton" type="button" value="삭제">
                     <select name="answer">
                         <option value="recent">답변없는것만</option>
                         <option value="old">답변있는것만</option>
