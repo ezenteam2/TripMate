@@ -345,7 +345,7 @@
                 top : 15px;
                 margin-left : 42%;
             }
-            .button [type=button]{
+            .button button {
                 background-color : white;
                 border : 1px solid gray;
                 width : 30px;
@@ -354,15 +354,31 @@
                 font-size: 15px;
                 color : #2E2E2E;
             }
-            .button [type=button]#_selected{
+            .button button#_selected{
                 background-color:#2E9AFE;
                 border:1px solid #0080FF;
                 color:white;
             }
-            .button [type=button].direction{
+            .button button.direction{
                 position : relative;
                 left : 5px;
-            }            
+                top : 3.2px;
+                height : 30px !important;
+            }
+            .button button:hover {
+                cursor: pointer;
+            }
+            .button button#_selected:hover{
+                cursor: default;
+            }
+            #one{
+                height: 20px;
+            }
+            #two{
+                height: 20px;
+                position: relative;
+                right : 2px;
+            }          
         </style>
         <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
     </head>
@@ -430,7 +446,7 @@
                     }
                     </script>
                     <hr>
-                    <img src="excelLogo.png" title="엑셀로 다운받기"><br>
+                    <a href ="test.xlsx" download><img src="excelLogo.png" title="엑셀로 다운받기"></a><br>
                     <input type="button" class="adminButton" id="myBtn2" value="삭제">
                     <div id="myModal2" class="modal2">
 
@@ -489,11 +505,11 @@
                         <tr><td><input type=checkbox></td><td></td><td></td><td></td><td></td><td></td></tr>                       
                     </table>
                     <div class="button">
-                        <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
-                        <input type="button" name="page2" value="2">
-                        <input type="button" name="page3" value="3">
-                        <input class ="direction" type="button" name="next" value=">">
-                        <input class ="direction" type="button" name="last_page" value=">>">
+                        <button id="_selected"name="page1" disabled="disabled">1</button>
+                        <button name="page2">2</button>
+                        <button name="page3">3</button>
+                        <button class ="direction" name="next" id="one"><img id="one" src="right-arrow.png"></button>
+                        <button class ="direction" name="last_page" id="two"><img id="two" src="fast-forward.png"></button>
                     </div>                    
                 </article>
                 </div>    

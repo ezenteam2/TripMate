@@ -155,9 +155,10 @@
         }
         .button {
             position : relative;
-            top : -15px;       
+            top : -15px;
+            margin-left : 35%;            
         }
-        [type=button]{
+        .button button {
             background-color : white;
             border : 1px solid gray;
             width : 30px;
@@ -165,20 +166,31 @@
             font-weight : bold;
             font-size: 15px;
             color : #2E2E2E;
-            cursor: pointer;
         }
-        [type=button]#_selected{
+        .button button#_selected{
             background-color:#2E9AFE;
             border:1px solid #0080FF;
             color:white;
-            cursor: default;
         }
-        [type=button].direction{
+        .button button.direction{
             position : relative;
             left : 5px;
+            top : 3.2px;
+            height : 30px !important;
         }
-        .button{
-        margin-left : 35%;
+        .button button:hover {
+            cursor: pointer;
+        }
+        .button button#_selected:hover{
+            cursor: default;
+        }
+        #one{
+            height: 20px;
+        }
+        #two{
+            height: 20px;
+            position: relative;
+            right : 2px;
         }
         footer{
             position : relative;
@@ -352,12 +364,12 @@
                         </tr>
                     </tfoot>    
                 </table>
-                <div class="button">
-                    <input id="_selected" type="button" name="page1" value="1" disabled="disabled">
-                    <input type="button" name="page2" value="2">
-                    <input type="button" name="page3" value="3">
-                    <input class ="direction" type="button" name="next" value=">">
-                    <input class ="direction" type="button" name="last_page" value=">>">
+                    <div class="button">
+                        <button id="_selected"name="page1" disabled="disabled">1</button>
+                        <button name="page2">2</button>
+                        <button name="page3">3</button>
+                        <button class ="direction" name="next" id="one"><img id="one" src="right-arrow.png"></button>
+                        <button class ="direction" name="last_page" id="two"><img id="two" src="fast-forward.png"></button>
                 </div>
             </form>
         </main>    
