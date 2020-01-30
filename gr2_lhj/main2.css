@@ -134,7 +134,7 @@ div.widget>div.message{
     
 }
 
-div.widget>div.footer{
+div.widget>div.myfooter{
     flex-grow:2;
     border-top:solid 1px;
     background-color:#f6f9fc;
@@ -147,4 +147,39 @@ body{
 *{
     font-family: 'Jua', sans-serif;
     font-size:20px;
+}
+
+
+/* footer 추가 */
+
+a:hover{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+.footer{            
+    display: flex;
+    flex-direction: row;
+    border:solid;
+    width : 100%;
+    margin-top:1%;
+    margin-bottom: -10%;
+    padding-left: 20%;
+
+
+}
+img{
+    height : 100px;
+}
+.company_info td, .company_info a{
+    font-size : 16px;            
+}
+#thetd{
+    font-weight: bold;
+    text-align: right;
+}
+.company_info td:nth-child(5){
+    width : 235px;
+    text-align: right;
 }

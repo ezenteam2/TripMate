@@ -3,35 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>마지막처럼 살기</title>
-<style>
-#review {
-	text-align: right;
-}
-#page{
-background-color:gray;
-color:black;
-align:center;
-width:50px;
-height:50px;
-}
-div[class=header] {
-    margin-top:30px;
-    width:101%;
-    height:150px;
-    position: relative;
-    margin-left:-8px;
-    z-index: 1;
-    
-}
-</style>
-
+<link rel="stylesheet" type="text/css" href="ys_p_016.css">
 <script type="text/javascript">
 	
 </script>
 </head>
 <body>
 <div class="header">
-        <div class="logo" style="text-align:center;"">
+        <div class="logo" style="text-align:center;">
         <img src="photo\logo.png" alt="로고" width="300" height="80" onclick="location.href='http://www.naver.com'">
         </div>
 	<br>
@@ -51,18 +30,43 @@ div[class=header] {
 <h3>여행검색  : <input type="text">&nbsp;<input type="submit" value="검색"></h3>
 
 </form>
-<table style = "border-collapse:collapse;"border width="1680" height="500">
-<tr><td colspan = "2"><a href=""><img src="photo\guide01.png" width="1680px" height="170"></a></td></tr>
-<tr><td colspan = "2"><a href=""><img src="photo\guide02.png" width="1680px" height="170"></a></td></tr>
-<tr><td colspan = "2"><a href=""><img src="photo\guide03.png" width="1680px" height="170"></a></td></tr>
 
-
+<table style="border-collapse: collapse;" border class="seller">
+	<tr onClick="location.href='ys_p_016(세부페이지).html'" style="cursor:pointer;"><td width="30%"><img src="photo/guide01.jpeg" class="sellImg">
+</td>
+		<td width="70%"><h1>2박 3일 핵인싸 펭수와 함께하는 상암동 방송국투어 !!!!
+		</h1><br>
+		<span class="matter">
+			본 상품은 숙박이 제공되지 않는 상품입니다.<br>
+		</span>
+		<br>#인싸투어 #상암동 #서울투어 #방송국 #펭수 
+		<br> <span class="price">1인 59,900원</span></td></tr>
+	<tr><td width="30%"><img src="photo/guide02.jpeg" class="sellImg">
+</td>
+		<td width="70%"><h1>3박 4일 유산슬과 떠나는 뽕짝투어 ❤️
+		</h1>
+		<br><br>
+		#뽕짝투어 #관광버스 #트로트 #유산슬 #짜사이
+		<br> <span class="price">1인 79,000원</span></td></tr>
+		<tr><td width="30%"><img src="photo/guide03.jpeg" class="sellImg">
+		</td>
+				<td width="70%"><h1>1박 2일 설민석과 함께하는 역사투어 :)
+				</h1>
+				<br>
+				<span class="matter">
+					본 상품은 숙박이 제공되지 않는 상품입니다.<br>
+				</span>
+				<br>#한국역사 #고궁투어 #근현대사 #학습투어
+				<br> <span class="price">1인 39,000원</span></td></tr>
 </table>
-<br>
-<div align="center">
-<input type = "button" id="page" value="1">
-<input type = "button" id="page" value="2">
-<input type = "button" id="page" value="3">
-</div>
+
+
+<div class="page">
+	<input type = "button" id="page" value="1">
+	<input type = "button" id="page" value="2">
+	<input type = "button" id="page" value="3">
+	</div>
 </body>
 </html>
+
+

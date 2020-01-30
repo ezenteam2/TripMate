@@ -1,0 +1,52 @@
+#review {
+	text-align: right;
+}
+#page{
+background-color:gray;
+color:black;
+align:center;
+width:50px;
+height:50px;
+}
+div[class=header] {
+    margin-top:30px;
+    width:101%;
+    height:150px;
+    position: relative;
+    margin-left:-8px;
+    z-index: 1;
+    
+}
+
+.seller{
+    width:100%;
+    height:auto;
+
+}
+
+.sellImg{
+    width:500px;
+    height:250px;
+}
+
+.matter{
+    float:right;
+    color:red;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.price{
+    font-size:20px;
+    color:silver;
+    float:right;
+}
+
+.page{    
+    text-align: center;
+    margin-top: 40px;
+}
+div{
+    
+}
