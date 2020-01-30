@@ -290,7 +290,7 @@
                                     <td><input type="checkbox"></td>
                                     <td>1</td>
                                     <td>hihong22</td>
-                                    <td>홍길동</td>
+                                    <td>펭수</td>
                                     <td>2020-01-11(14:00:24)</td>
                                     <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
                                 </tr>
@@ -298,7 +298,7 @@
                                     <td><input type="checkbox" /></td>
                                     <td>2</td>
                                     <td>kimACA</td>
-                                    <td>김길동</td>
+                                    <td>유산슬</td>
                                     <td>2020-01-11(16:20:34)</td>
                                     <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
                                 </tr>
@@ -306,7 +306,7 @@
                                     <td><input type="checkbox" /></td>
                                     <td>3</td>
                                     <td>choigil</td>
-                                    <td>최길동</td>
+                                    <td>설민석</td>
                                     <td>2020-01-12(11:00:14)</td>
                                     <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
                                 </tr>
@@ -314,7 +314,7 @@
                                     <td><input type="checkbox" /></td>
                                     <td>4</td>
                                     <td>hhwda22</td>
-                                    <td>황길동</td>
+                                    <td>박민석</td>
                                     <td>2020-01-01(17:08:24)</td>
                                     <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
                                 </tr>
@@ -322,7 +322,7 @@
                                     <td><input type="checkbox" /></td>
                                     <td>5</td>
                                     <td>yoo2231</td>
-                                    <td>유길동</td>
+                                    <td>김민우</td>
                                     <td>2020-01-11(14:40:24)</td>
                                     <td class="수정"><input type="button" value="수정" style="visibility: hidden;"></td>
                                 </tr>
@@ -389,7 +389,47 @@
             editButtons.forEach((button)=>{
                 button.addEventListener("mouseenter", editButtonMouseIn);
                 button.addEventListener("mouseleave", editButtonMouseOut);
-            });
+            })
+
+            function checkboxHandle(){
+                if(isCheckedAll()){
+                    removeCheckAll();
+                } else {
+                    addCheckAll();
+                }
+            }
+
+            function isCheckedAll(){
+                for(let idx=0; idx<checkBoxes.length; idx++){
+                    if(!checkBoxes[idx].checked){
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            function addCheckAll(){
+                checkBoxes.forEach(
+                    (checkBox)=>{
+                        console.dir(checkBox);
+                        checkBox.checked=true;
+                    }
+                )
+            }
+
+            function removeCheckAll(){
+                checkBoxes.forEach(
+                    (checkBox)=>{
+                        checkBox.checked=false;
+                    }
+                )
+            }
+
+            const userTable = document.querySelector('table[class=userTable]');
+            const checkBoxes=userTable.querySelectorAll('input[type=checkbox]');
+            const thList = userTable.querySelectorAll('th');
+            const selectAll = thList[0];
+            selectAll.addEventListener('click', checkboxHandle);
         </script>        
     </body>
 </html>

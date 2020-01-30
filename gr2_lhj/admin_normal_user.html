@@ -244,7 +244,7 @@
             }
 			
 			#select-All{
-				pointer:cursor;
+				cursor:pointer;
 			}
 
                 
@@ -406,17 +406,45 @@
                 button.addEventListener("mouseleave", editButtonMouseOut);
             });
 
-            const userTable = document.querySelector('table[class=userTable]');
-            const thList = userTable.querySelectorAll('th');
-            const selectAll = thList[0];
-            selectAll.addEventListener('click', (event)=>{
-                const checkBoxes=userTable.querySelectorAll('input[type=checkbox');
+            function checkboxHandle(){
+                if(isCheckedAll()){
+                    removeCheckAll();
+                } else {
+                    addCheckAll();
+                }
+            }
+
+            function isCheckedAll(){
+                for(let idx=0; idx<checkBoxes.length; idx++){
+                    if(!checkBoxes[idx].checked){
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            function addCheckAll(){
                 checkBoxes.forEach(
                     (checkBox)=>{
-                        checkBox.style.check="checked";
+                        console.dir(checkBox);
+                        checkBox.checked=true;
                     }
                 )
-            })
+            }
+
+            function removeCheckAll(){
+                checkBoxes.forEach(
+                    (checkBox)=>{
+                        checkBox.checked=false;
+                    }
+                )
+            }
+
+            const userTable = document.querySelector('table[class=userTable]');
+            const checkBoxes=userTable.querySelectorAll('input[type=checkbox]');
+            const thList = userTable.querySelectorAll('th');
+            const selectAll = thList[0];
+            selectAll.addEventListener('click', checkboxHandle);
         </script>        
     </body>
 </html>
