@@ -103,6 +103,7 @@
             .div2{
                 border-left: 1px solid black;
                 margin-left: -1px;
+                width:1000px;
             }
             
             article{
@@ -112,6 +113,7 @@
             #title {
                 font-size: 30px;
                 font-weight: bold;
+                text-align: center;
             }            
         </style>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -151,20 +153,15 @@
             
                 <div class = "div2">
                 <article>
-                    <!-- 화면설계서 구현 내용 -->
-                    
-                    <p id="title">제목</p>
+                                       
+                    <p id="title">관리자 로그인</p>
                     <hr>
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
-                    <!-- 화면설계서 구현 내용 -->
+                   
+                   	<p style="text-align:center">
+						<img src="logo.PNG" width="150" style="margin:30px"><br>
+						<input type="text" name="id01" placeholder="아이디" style="width:300px; height:40px; margin:10px;"><br>
+						<input type="password" name="pw01" placeholder="비밀번호" style="width:300px; height:40px; margin:10px;"><br><br>
+						<input onclick="location.href='../gr2_lhj/admin_guide_user.html'" type="submit" name="login01" value="로그인" style="width:100px; height:40px;">
                     
                     
                 </article>
