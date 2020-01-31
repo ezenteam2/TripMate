@@ -82,9 +82,24 @@
     margin-left: 1100px;
 }
 
-.content{
-    width:70%;
-    height:500px;
-    border:1px solid black;
-    margin: 0 auto;
+.main{
+	width:60%;
+	height:500px;
+
+}
+
+.userPhoto{
+	width:30%;
+	height:150px;
+
+}
+.user{
+	width:250px;
+	height:150px;
+}
+
+.intro{
+	float: right;
+	font-style: italic;
+	color:blue;
 }
